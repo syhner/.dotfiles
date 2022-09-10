@@ -6,8 +6,8 @@ echo 'Hello from .zshrc'
 
 # Create aliases
 
-# -A all files except ./ and ../ || -F append / to directories || -h readable file sizes || -l list format
-alias ls='ls -AF' # 
+# -A all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
+alias ls='ls -AFh' # 
 
 # Customise prompts
 # %n username || %m host || %1~ current directory || %# default prompt symbol || %L shell level
@@ -21,7 +21,7 @@ RPROMPT='%*'
 
 # Functions
 function resource() {
-  source .zshrc;
+  source ~/.zshrc;
 }
 
 function mkcd() {
