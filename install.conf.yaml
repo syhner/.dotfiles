@@ -5,8 +5,12 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc:
+    ~/.config/bat:
+      create: true
+      path: config/bat
     ~/.gitconfig:
+    ~/.zshenv:
+    ~/.zshrc:
 
 - create:
     - ~/Work
