@@ -1,13 +1,16 @@
 echo 'Hello from .zshrc'
 
 # Set variables
+# Syntax highlighting for man pages using bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Change ZSH options
 
 # Create aliases
 
 # -A all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
-alias ls='ls -AFh' # 
+alias ls='ls -AFhl'
+alias mkdir='mkdir -p'
 
 # Customise prompts
 # %n username || %m host || %1~ current directory || %# default prompt symbol || %L shell level
@@ -18,6 +21,8 @@ PROMPT='
 RPROMPT='%*'
 
 # Add locations to $PATH
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Functions
 function resource() {
