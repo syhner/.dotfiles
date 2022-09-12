@@ -3,7 +3,7 @@
 echo "\n<<< Starting ZSH setup >>>\n"
 
 echo "Enter superuser (sudo) password to edit /etc/shells"
-echo '/opt/homebrew/bin/zsh' | sudo tee -a '/etc/shells'
+echo '/opt/homebrew/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
 
 # -s newshell
 chsh -s /opt/homebrew/bin/zsh
