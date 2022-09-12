@@ -15,8 +15,8 @@ brew "httpie"                                 # User-friendly cURL replacement (
 brew "less"                                   # Pager program similar to more
 brew "jenv"                                   # Manage your Java environment
 brew "mas"                                    # Mac App Store command-line interface
+brew "n"
 brew "nano"                                   # Free (GNU) replacement for the Pico text editor
-brew "nvm"                                    # Manage multiple Node.js versions
 brew "postgis"                                # Adds support for geographic objects to PostgreSQL
 brew "postgresql@14"                          # Object-relational database system
 brew "pyenv"                                  # Python version management

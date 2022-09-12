@@ -4,7 +4,9 @@ echo 'Hello from .zshrc'
 # Syntax highlighting for man pages using bat
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export N_PREFIX="$HOME/.n"
 export NULLCMD=bat
+export PREFIX="$N_PREFIX"
 
 # Change ZSH options
 
@@ -24,7 +26,7 @@ PROMPT='
 RPROMPT='%*'
 
 # Add locations to $PATH
-# Add Visual Studio Code (code)
+export PATH="$PATH:$N_PREFIX/bin"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Functions
