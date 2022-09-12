@@ -1,2 +1,3 @@
 - Be able to use exa without sorting by name
 - Make sh use homebrew installed zsh rather than preinstalled zsh
+- Show exa colors with grep
