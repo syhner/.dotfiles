@@ -10,6 +10,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Create aliases
 
 # -A all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
+alias brewdump='brew bundle dump --force --describe'
 alias exa='exa -aFhl --git'
 alias ls='exa'
 alias mkdir='mkdir -p'
