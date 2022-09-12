@@ -6,9 +6,11 @@ echo "\n<<< Starting Node setup >>>\n"
 
 if exists node; then
   echo "Node $(node --version) and NPM $(npm --version) are already installed"
-else
+elif exists n; then
   echo "Installing Node and NPM with n..."
   n lts
+else
+  echo "n needs to be installed — use the Brewfile"
 fi
 
 # Install global NPM packages
