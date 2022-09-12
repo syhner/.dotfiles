@@ -12,6 +12,7 @@ brew "docker-compose"                         # Isolated development environment
 brew "exa"                                    # Modern replacement for 'ls'
 brew "git"                                    # Distributed revision control system
 brew "httpie"                                 # User-friendly cURL replacement (command-line HTTP client)
+brew "less"                                   # Pager program similar to more
 brew "jenv"                                   # Manage your Java environment
 brew "mas"                                    # Mac App Store command-line interface
 brew "nano"                                   # Free (GNU) replacement for the Pico text editor
