@@ -8,4 +8,4 @@ echo '/opt/homebrew/bin/zsh' | sudo tee -a '/etc/shells' >/dev/null
 # -s newshell
 chsh -s /opt/homebrew/bin/zsh
 
-echo "A restart may be required for default shell changes to take effecte"
+echo "A restart may be required for default shell changes to take effect"
