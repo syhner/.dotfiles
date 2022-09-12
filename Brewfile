@@ -22,7 +22,8 @@ brew "postgresql@14"                          # Object-relational database syste
 brew "pyenv"                                  # Python version management
 brew "watchman"                               # Watch files and take action when they change
 brew "yarn"                                   # JavaScript package manager
-brew "zlib"                                   # General-purpose lossless data-compression library
+brew "zlib"                                   #z General-purpose lossless data-compression library
+brew "zsh"                                    # UNIX shell (command interpreter)
 brew "zsh-autosuggestions"                    # Fish-like fast/unobtrusive autosuggestions for zsh
 
 # Casks (Applications)
