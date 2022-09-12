@@ -20,6 +20,7 @@ npm install --global prettier
 npm install --global ts-node
 npm install --global ts-node-dev
 npm install --global typescript
+npm install --global yarn
 
 echo "Global NPM packages:"
 npm list --global --depth=0
