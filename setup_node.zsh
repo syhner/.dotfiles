@@ -10,3 +10,16 @@ else
   echo "Installing Node and NPM with n..."
   n lts
 fi
+
+# Install global NPM packages
+npm install --global cross-env
+npm install --global http-server
+npm install --global json-server
+npm install --global nodemon
+npm install --global prettier
+npm install --global ts-node
+npm install --global ts-node-dev
+npm install --global typescript
+
+echo "Global NPM packages:"
+npm list --global --depth=0
