@@ -16,6 +16,7 @@ alias brewdump='brew bundle dump --force --describe'
 alias exa='exa -aFhl --git'
 alias ls='exa'
 alias mkdir='mkdir -p'
+alias rm='trash'
 alias trail='<<<${(F)path}'
 
 # Customise prompts
