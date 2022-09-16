@@ -2,15 +2,15 @@
 
 echo "\n<<< Starting Node setup >>>\n"
 
-# n should already be installed through the Brewfile
+# nvm should already be installed through the Brewfile
 
 if exists node; then
   echo "Node $(node --version) and NPM $(npm --version) are already installed"
 elif exists n; then
-  echo "Installing Node and NPM with n..."
-  n lts
+  echo "Installing Node and NPM with nvm..."
+  nvm install --lts
 else
-  echo "n needs to be installed — use the Brewfile"
+  echo "nvm needs to be installed — use the Brewfile"
 fi
 
 # Install global NPM packages
