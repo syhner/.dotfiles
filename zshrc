@@ -2,6 +2,7 @@ echo 'Hello from .zshrc'
 
 # Set variables
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk # https://reactnative.dev/docs/environment-setup
+export DOTFILES="$HOME/.dotfiles"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Syntax highlighting for man pages using bat
 export NULLCMD=bat # Use bat as NULLCMD instead of cat
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" # Set NVM directory
