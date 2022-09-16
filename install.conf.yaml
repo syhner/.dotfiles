@@ -9,6 +9,7 @@
       create: true
       path: config/bat
     ~/.gitconfig:
+    ~/.nanorc:
     ~/.zshenv:
     ~/.zshrc:
 
