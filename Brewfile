@@ -2,6 +2,7 @@
 tap "adoptopenjdk/openjdk"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -34,6 +35,7 @@ brew "zsh-autosuggestions"                    # Fish-like fast/unobtrusive autos
 # Casks (Applications)
 cask "adoptopenjdk8"                          # AdoptOpenJDK OpenJDK (Java) Development Kit
 cask "corretto"                               # OpenJDK distribution from Amazon
+cask "font-fira-code-nerd-font"               # Developer targeted fonts with a high number of glyphs
 cask "google-chrome"                          # Web browser
 cask "raycast"                                # Control your tools with a few keystrokes
 cask "react-native-debugger"                  # Standalone app for debugging React Native apps
