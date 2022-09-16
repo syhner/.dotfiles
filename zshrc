@@ -11,6 +11,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Create aliases
 alias brewdump='brew bundle dump --force --describe'
 alias exa='exa -aFhl --git' # -a all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
+alias ftrail='<<<${(F)fpath}'
 alias ls='exa'
 alias mkdir='mkdir -p'
 alias trail='<<<${(F)path}'
