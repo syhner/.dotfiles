@@ -1,5 +1,4 @@
 # Taps (Repositories)
-tap "adoptopenjdk/openjdk"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -27,6 +26,7 @@ brew "postgis"                                # Adds support for geographic obje
 brew "postgresql@14"                          # Object-relational database system
 brew "pyenv"                                  # Python version management
 brew "rbenv"                                  # Ruby version manager
+brew "spaceship"                              # Zsh prompt for Astronauts
 brew "watchman"                               # Watch files and take action when they change
 brew "zlib"                                   # General-purpose lossless data-compression library
 brew "zsh"                                    # UNIX shell (command interpreter)
