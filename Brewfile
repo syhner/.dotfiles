@@ -48,6 +48,5 @@ mas "Hidden Bar", id: 1452453066              # Hide menu bar items
 mas "iStat Menus", id: 1319778037             # Menu bar system manager
 mas "Magnet", id: 441258766                   # Window manager through dragging to screen edges
 mas "Microsoft Excel", id: 462058435          # Spreadsheet software
-mas "NordVPN", id: 905953485                  # VPN
 mas "TestFlight", id: 899247664               # App store beta testing
 mas "Xcode", id: 497799835                    # Build apps for Apple devices
