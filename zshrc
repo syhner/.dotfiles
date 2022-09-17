@@ -8,6 +8,7 @@ export NULLCMD=bat # Use bat as NULLCMD instead of cat
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+export PYENV_ROOT="$HOME/.pyenv"
 
 # Change ZSH options
 
@@ -30,6 +31,7 @@ path=(
   $path
   $ANDROID_SDK_ROOT/emulator # https://reactnative.dev/docs/environment-setup
   $ANDROID_SDK_ROOT/platform-tools # https://reactnative.dev/docs/environment-setup
+  $PYENV_ROOT/bin # https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # https://code.visualstudio.com/docs/setup/mac
 )
 
@@ -43,4 +45,5 @@ function mkcd() {
 
 # Plugins
 
-# Other
+# Customise prompts
+# source /opt/homebrew/opt/spaceship/spaceship.zsh

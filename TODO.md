@@ -1,5 +1,4 @@
 - Be able to use exa without sorting by name (for example when searching multiple directories)
 - Show exa colors with grep
 - Mac setup
-- Pyenv setup
 - Syntax highlighting in nano
