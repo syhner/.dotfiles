@@ -10,6 +10,9 @@
       path: config/bat
     ~/.gitconfig:
     ~/.nanorc:
+    ~/.zprofile:
+    ~/.zlogin:
+    ~/.zlogout:
     ~/.zshenv:
     ~/.zshrc:
 

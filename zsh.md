@@ -1,0 +1,5 @@
+- **.zprofile**: commands which may take some time to complete
+- **.zlogin**: commands to be run when the shell is fully setup
+- **.zlogout**: release resources acquired at login
+- **.zshenv**: needed by commands to run non-interactively, should be updated on each new shell
+- **.zshrc**: related to interactive usage
