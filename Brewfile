@@ -18,6 +18,7 @@ brew "httpie"                                 # User-friendly cURL replacement (
 brew "less"                                   # Pager program similar to more
 brew "jenv"                                   # Manage your Java environment
 brew "less"                                   # Pager program similar to more
+brew "mackup"                                 # Keep your Mac's application settings in sync
 brew "mas"                                    # Mac App Store command-line interface
 brew "nano"                                   # Free (GNU) replacement for the Pico text editor
 brew "nvm"                                    # Manage multiple Node.js versions
