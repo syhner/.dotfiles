@@ -10,20 +10,20 @@ elif exists nvm; then
   echo "Installing Node and NPM with nvm..."
   nvm install --lts
   nvm use --lts
+
+  # Install global NPM packages
+  npm install --global cross-env
+  npm install --global http-server
+  npm install --global json-server
+  npm install --global nodemon
+  npm install --global prettier
+  npm install --global ts-node
+  npm install --global ts-node-dev
+  npm install --global typescript
+  npm install --global yarn
 else
   echo "nvm needs to be installed — use the Brewfile"
 fi
-
-# Install global NPM packages
-npm install --global cross-env
-npm install --global http-server
-npm install --global json-server
-npm install --global nodemon
-npm install --global prettier
-npm install --global ts-node
-npm install --global ts-node-dev
-npm install --global typescript
-npm install --global yarn
 
 echo "Global NPM packages:"
 npm list --global --depth=0
