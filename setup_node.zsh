@@ -6,9 +6,10 @@ echo "\n<<< Starting Node setup >>>\n"
 
 if exists node; then
   echo "Node $(node --version) and NPM $(npm --version) are already installed"
-elif exists n; then
+elif exists nvm; then
   echo "Installing Node and NPM with nvm..."
   nvm install --lts
+  nvm use --lts
 else
   echo "nvm needs to be installed — use the Brewfile"
 fi
