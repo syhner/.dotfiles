@@ -16,6 +16,7 @@ elif exists nvm; then
   npm install --global http-server
   npm install --global json-server
   npm install --global nodemon
+  npm install --global npkill
   npm install --global prettier
   npm install --global ts-node
   npm install --global ts-node-dev
