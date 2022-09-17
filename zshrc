@@ -19,6 +19,7 @@ alias exa='exa -aFhl --git' # -a all files except ./ and ../ || -F show file typ
 alias ftrail='<<<${(F)fpath}'
 alias ls='exa'
 alias mkdir='mkdir -p'
+alias sudo='sudo ' # Allow aliases to be sudoed
 alias trail='<<<${(F)path}'
 
 # Customise prompts
