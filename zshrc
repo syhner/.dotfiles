@@ -19,6 +19,7 @@ alias exa='exa -aFhl --git' # -a all files except ./ and ../ || -F show file typ
 alias ftrail='<<<${(F)fpath}'
 alias ls='exa'
 alias mkdir='mkdir -p'
+alias myip='ifconfig | sed -En "s/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p"'
 alias sudo='sudo ' # Allow aliases to be sudoed
 alias trail='<<<${(F)path}'
 
