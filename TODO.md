@@ -5,3 +5,4 @@
 - Script for changing terminal font to Fira Code (Retina)
 - Use spaceship in subshells
 - Show shell level in spaceship
+- ZSH history and suggestions improvements
