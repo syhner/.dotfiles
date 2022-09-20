@@ -43,11 +43,14 @@ fpath=(
 )
 
 # Functions
+function gitclonecd() {
+  git clone "$1" && cd "$(basename "$_" .git)"
+}
 function resource() {
   source ~/.zshrc;
 }
 function mkcd() {
-  mkdir -p "$@" && cd "$_"; # -p make parent directories || "$&" fn args || "$_" last arg
+  mkdir -p "$@" && cd "$_"; # -p make parent directories || "$@" fn args || "$_" last arg
 }
 
 # Plugins
