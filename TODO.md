@@ -6,3 +6,4 @@
 - Use spaceship in subshells
 - Show shell level in spaceship
 - ZSH history and suggestions improvements
+- Shell shows user and server if not localhost
