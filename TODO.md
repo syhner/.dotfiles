@@ -1,7 +1,6 @@
 - Be able to use exa without sorting by name (for example when searching multiple directories)
 - Show exa colors with grep
 - Mac setup
-- Syntax highlighting in nano
 - Script for changing terminal font to Fira Code (Retina)
 - Use spaceship in subshells
 - Show shell level in spaceship

@@ -1,4 +1,1 @@
-include /usr/local/share/nano/sh.nanorc
-include /usr/local/share/nano/javascript.nanorc
-include /usr/local/share/nano/json.nanorc
-include /usr/local/share/nano/markdown.nanorc
+include /opt/homebrew/Cellar/nano/*/share/nano/*.nanorc
