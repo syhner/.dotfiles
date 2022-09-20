@@ -6,3 +6,4 @@
 - Show shell level in spaceship
 - ZSH history and suggestions improvements
 - Shell shows user and server if not localhost
+- Nano syntax highlighting for more file formats (e.g. /opt/homebrew/Cellar/nano/syntax-highlighting/share/nano/ts.nanorc)
