@@ -46,11 +46,21 @@ fpath=(
 function gitclonecd() {
   git clone "$1" && cd "$(basename "$_" .git)"
 }
+function greps() {
+  eval grep \""$(join "\|" "$@")"\"
+}
+function join() {
+  out="$2"
+  for i in "${@:3}"; do
+    out+="$1$i"
+  done
+  echo $out
+}
 function resource() {
   source ~/.zshrc;
 }
 function mkcd() {
-  mkdir -p "$@" && cd "$_"; # -p make parent directories || "$@" fn args || "$_" last arg
+  mkdir -p "$@" && cd "$_";
 }
 
 # Plugins
