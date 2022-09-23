@@ -104,4 +104,4 @@ SPACESHIP_PROMPT_ORDER=(
 # Source
 source /opt/homebrew/opt/spaceship/spaceship.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix nvm)/nvm.sh # This loads nvm
+source /opt/homebrew/opt/nvm/nvm.sh # This loads nvm
