@@ -35,8 +35,7 @@ brew "zsh-autosuggestions"                    # Fish-like fast/unobtrusive autos
 brew "zsh-syntax-highlighting"                # Fish shell like syntax highlighting for zsh
 
 # Casks (Applications)
-cask "adoptopenjdk8"                          # AdoptOpenJDK OpenJDK (Java) Development Kit
-cask "corretto"                               # OpenJDK distribution from Amazon
+cask "corretto8"                              # OpenJDK distribution from Amazon
 cask "font-fira-code-nerd-font"               # Developer targeted fonts with a high number of glyphs
 cask "google-chrome"                          # Web browser
 cask "raycast"                                # Control your tools with a few keystrokes
