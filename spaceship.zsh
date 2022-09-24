@@ -1,3 +1,5 @@
+source "$DOTFILES/spaceship_shlvl.zsh"
+
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stamps section
   user          # Username section
@@ -28,6 +30,7 @@ SPACESHIP_PROMPT_ORDER=(
   kubectl       # Kubectl context section
   terraform     # Terraform workspace section
   ibmcloud      # IBM Cloud section
+  shlvl         # Custom section from spaceship_shlvl.zsh
   exec_time     # Execution time
   async         # Async jobs indicator
   line_sep      # Line break
