@@ -8,3 +8,4 @@
 - Shell shows user and server if not localhost
 - Nano syntax highlighting for more file formats (e.g. /opt/homebrew/Cellar/nano/syntax-highlighting/share/nano/ts.nanorc)
 - Zsh suggestions don't care about folder case
+- Fix resource function errors (eval?)
