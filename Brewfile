@@ -9,13 +9,11 @@ tap "homebrew/services"
 # Brews (Formulae / Packages)
 brew "awscli"                                 # Official Amazon AWS command-line interface
 brew "bat"                                    # Clone of cat(1) with syntax highlighting and Git integration
-brew "cocoapods"                              # Dependency manager for Cocoa projects
 brew "docker"                                 # Pack, ship and run any application as a lightweight container
 brew "docker-compose"                         # Isolated development environments using Docker
 brew "exa"                                    # Modern replacement for 'ls'
 brew "git"                                    # Distributed revision control system
 brew "httpie"                                 # User-friendly cURL replacement (command-line HTTP client)
-brew "less"                                   # Pager program similar to more
 brew "jenv"                                   # Manage your Java environment
 brew "less"                                   # Pager program similar to more
 brew "mackup"                                 # Keep your Mac's application settings in sync
@@ -24,7 +22,7 @@ brew "nano"                                   # Free (GNU) replacement for the P
 brew "nvm"                                    # Manage multiple Node.js versions
 brew "openjdk"                                # Development kit for the Java programming language
 brew "postgis"                                # Adds support for geographic objects to PostgreSQL
-brew "postgresql@14"                          # Object-relational database system
+brew "postgresql@13"                          # Object-relational database system
 brew "pyenv"                                  # Python version management
 brew "rbenv"                                  # Ruby version manager
 brew "spaceship"                              # Zsh prompt for Astronauts

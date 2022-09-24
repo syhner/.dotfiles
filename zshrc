@@ -13,7 +13,7 @@ export ZSHRC="$HOME/.zshrc" # Shortcut to this file
 # Change ZSH options
 
 # Create aliases
-alias brewdump='brew bundle dump --force --describe'
+alias brewdump='brew bundle dump --force --describe --file=dump.Brewfile'
 alias exa='exa -aFhl --git' # -a all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
 alias ftrail='<<<${(F)fpath}'
 alias ls='exa'
@@ -63,6 +63,6 @@ function mkcd() {
 
 # Source
 source /opt/homebrew/opt/spaceship/spaceship.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/opt/nvm/nvm.sh # This loads nvm
 source "$DOTFILES/spaceship.zsh" # Customise prompt
+source /opt/homebrew/opt/nvm/nvm.sh # This loads nvm
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

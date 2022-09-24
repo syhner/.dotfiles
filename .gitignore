@@ -1,3 +1,4 @@
-Brewfile.lock.json
 .DS_Store
+Brewfile.lock.json
+dump.Brewfile
 private/
