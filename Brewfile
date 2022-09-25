@@ -65,4 +65,5 @@ mas "Microsoft Excel", id: 462058435          # Spreadsheet software
 mas "TestFlight", id: 899247664               # App store beta testing
 mas "NordVPN", id: 905953485                  # Secure & private VPN
 mas "TestFlight", id: 899247664               # MacOS beta testing
+mas "WhatsApp", id: 1147396723                # Insant messager and VoIP
 mas "Xcode", id: 497799835                    # Build apps for Apple devices
