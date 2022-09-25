@@ -1,6 +1,9 @@
 echo 'Hello from .zshrc'
 
-# Set variables
+# ------------- #
+# Set variables #
+# ------------- #
+
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk" # https://reactnative.dev/docs/environment-setup
 export DOTFILES="$HOME/.dotfiles" # Shortcut to this directory
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home # https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/macos-install.html
@@ -10,9 +13,10 @@ export NVM_DIR="$HOME/.nvm" # https://github.com/nvm-sh/nvm#installing-and-updat
 export PYENV_ROOT="$HOME/.pyenv" # https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv
 export ZSHRC="$HOME/.zshrc" # Shortcut to this file
 
-# Change ZSH options
+# -------------- #
+# Create aliases #
+# -------------- #
 
-# Create aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -26,7 +30,10 @@ alias myip='ifconfig | sed -En "s/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-
 alias sudo='sudo ' # Allow aliases to be sudoed
 alias trail='<<<${(F)path}'
 
-# Add locations to $path and $fpath arrays
+# ---------------------------------------- #
+# Add locations to $path and $fpath arrays #
+# ---------------------------------------- #
+
 typeset -U path
 path=(
   $JAVA_HOME/bin
@@ -42,7 +49,9 @@ fpath=(
   $fpath
 )
 
-# Functions
+# --------- #
+# Functions #
+# --------- #
 function gitclonecd() {
   git clone "$1" && cd "$(basename "$_" .git)"
 }
@@ -63,24 +72,30 @@ function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
-# Source
-. /opt/homebrew/etc/profile.d/z.sh # https://github.com/rupa/z
+# ------ #
+# Source #
+# ------ #
+
+# Customise prompt with spaceship
 source /opt/homebrew/opt/spaceship/spaceship.zsh
-source "$DOTFILES/spaceship.zsh" # Customise prompt
-source /opt/homebrew/opt/nvm/nvm.sh # This loads nvm
+source "$DOTFILES/spaceship.zsh" 
+
+# Brews
+source /opt/homebrew/opt/nvm/nvm.sh
+source /opt/homebrew/etc/profile.d/z.sh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# -----------------
-# Other ZSH options
-# -----------------
+# ----- #
+# Other #
+# ----- #
 
 autoload -U compinit && compinit # List flags with TAB
 
-# Navigate up and down through history starting from input field
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Bind up arrow key
-bindkey "^[[B" down-line-or-beginning-search # Bind down arrow key
+# Navigate up and down through history starting from what is in input field
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
+
+# ----------------------------------------------------------------- #
+# ZSH options - https://zsh.sourceforge.io/Doc/Release/Options.html #
+# ----------------------------------------------------------------- #
