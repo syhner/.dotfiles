@@ -13,7 +13,11 @@ export ZSHRC="$HOME/.zshrc" # Shortcut to this file
 # Change ZSH options
 
 # Create aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias brewdump='brew bundle dump --force --describe --file=dump.Brewfile'
+alias cmd='command'
 alias exa='exa -aFhl --git' # -a all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
 alias ftrail='<<<${(F)fpath}'
 alias ls='exa'
@@ -59,10 +63,24 @@ function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
-# Plugins
-
 # Source
+. /opt/homebrew/etc/profile.d/z.sh # https://github.com/rupa/z
 source /opt/homebrew/opt/spaceship/spaceship.zsh
 source "$DOTFILES/spaceship.zsh" # Customise prompt
 source /opt/homebrew/opt/nvm/nvm.sh # This loads nvm
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# -----------------
+# Other ZSH options
+# -----------------
+
+autoload -U compinit && compinit # List flags with TAB
+
+# Navigate up and down through history starting from input field
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Bind up arrow key
+bindkey "^[[B" down-line-or-beginning-search # Bind down arrow key
