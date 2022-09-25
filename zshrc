@@ -86,48 +86,55 @@ source /opt/homebrew/etc/profile.d/z.sh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# ----- #
-# Other #
-# ----- #
-
-autoload -U compinit && compinit # List flags with TAB
-
-# Navigate up and down through history starting from what is in input field
-bindkey "^[[A" up-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search
-
 # ----------------------------------------------------------------- #
 # ZSH options - https://zsh.sourceforge.io/Doc/Release/Options.html #
 # ----------------------------------------------------------------- #
 
 # 01 - Changing directories
 
-
 # 02 - Completion
-
 
 # 03 - Expansion and Globbing
 
-
 # 04 - History
-
+setopt extendedHistory
+setopt histIgnoreAllDups
+setopt histNoStore
+setopt incAppendHistoryTime
 
 # 05 - Initialisation
 
-
 # 06 - Input/Output
-
 
 # 07 - Job Control
 
-
 # 08 - Prompting
-
 
 # 09 - Scripts and Functions
 
-
 # 10 - Shell emulation
 
-
 # 11 - Shell state
+
+# -------- #
+# autoload #
+# -------- #
+
+autoload -U compinit && compinit # List flags with TAB
+
+# ------------ #
+# Key bindings #
+# ------------ #
+
+# Navigate up and down through history starting from what is in input field
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
+
+# ------ #
+# zstyle #
+# ------ #
+
+# Use arrow keys to navigate between TAB suggestions
+zstyle ':completion:*' menu select 
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # Case insensitive autocompletion
