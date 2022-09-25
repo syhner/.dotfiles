@@ -12,3 +12,4 @@
 - Plugins
 - Go through zsh options
 - Option to replace .. ... .... aliases?
+- More zstyle
