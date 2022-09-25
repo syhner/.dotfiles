@@ -27,6 +27,7 @@ brew "pyenv"                                  # Python version management
 brew "rbenv"                                  # Ruby version manager
 brew "spaceship"                              # Zsh prompt for Astronauts
 brew "watchman"                               # Watch files and take action when they change
+brew "z"                                      # Tracks most-used directories to make cd smarter
 brew "zlib"                                   # General-purpose lossless data-compression library
 brew "zsh"                                    # UNIX shell (command interpreter)
 brew "zsh-autosuggestions"                    # Fish-like fast/unobtrusive autosuggestions for zsh
