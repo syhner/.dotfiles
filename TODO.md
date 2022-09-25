@@ -13,3 +13,4 @@
 - Go through zsh options
 - Option to replace .. ... .... aliases?
 - More zstyle
+- Separate dev and personal

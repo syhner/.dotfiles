@@ -43,7 +43,6 @@ cask "font-fira-code-nerd-font"               # Developer targeted fonts with a 
 cask "google-chrome"                          # Web browser
 cask "imageoptim"                             # Tool to optimize images to a smaller size
 cask "league-of-legends"                      # Multiplayer online battle arena game
-cask "nordvpn"                                # VPN client for secure internet access and private browsing
 cask "obsidian"                               # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "pgadmin4"                               # Administration and development platform for PostgreSQL
 cask "raycast"                                # Control your tools with a few keystrokes
@@ -65,5 +64,5 @@ mas "Microsoft Excel", id: 462058435          # Spreadsheet software
 mas "TestFlight", id: 899247664               # App store beta testing
 mas "NordVPN", id: 905953485                  # Secure & private VPN
 mas "TestFlight", id: 899247664               # MacOS beta testing
-mas "WhatsApp", id: 1147396723                # Insant messager and VoIP
+mas "WhatsApp", id: 1147396723                # Insant messager and VOiP
 mas "Xcode", id: 497799835                    # Build apps for Apple devices
