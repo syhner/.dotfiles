@@ -52,6 +52,7 @@ fpath=(
 # --------- #
 # Functions #
 # --------- #
+
 function gitclonecd() {
   git clone "$1" && cd "$(basename "$_" .git)"
 }
@@ -116,25 +117,17 @@ setopt incAppendHistoryTime
 
 # 11 - Shell state
 
-# -------- #
-# autoload #
-# -------- #
+# ------#
+# Other #
+# ----- #
 
 autoload -U compinit && compinit # List flags with TAB
-
-# ------------ #
-# Key bindings #
-# ------------ #
 
 # Navigate up and down through history starting from what is in input field
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
 
-# ------ #
-# zstyle #
-# ------ #
-
 # Use arrow keys to navigate between TAB suggestions
-zstyle ':completion:*' menu select 
+zstyle ':completion:*' menu select
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # Case insensitive autocompletion
