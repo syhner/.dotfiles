@@ -66,3 +66,4 @@ mas "NordVPN", id: 905953485                  # Secure & private VPN
 mas "TestFlight", id: 899247664               # MacOS beta testing
 mas "WhatsApp", id: 1147396723                # Insant messager and VOiP
 mas "Xcode", id: 497799835                    # Build apps for Apple devices
+mas "Yubico Authenticator", id: 1497506650    # 2FA with Yubikey
