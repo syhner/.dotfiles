@@ -13,6 +13,7 @@ brew "docker"                                 # Pack, ship and run any applicati
 brew "docker-compose"                         # Isolated development environments using Docker
 brew "exa"                                    # Modern replacement for 'ls'
 brew "git"                                    # Distributed revision control system
+brew "graphviz"                               # Graph visualization software from AT&T and Bell Labs
 brew "httpie"                                 # User-friendly cURL replacement (command-line HTTP client)
 brew "jenv"                                   # Manage your Java environment
 brew "less"                                   # Pager program similar to more
