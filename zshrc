@@ -95,6 +95,64 @@ function runinsubdirs() {
     )
   done
 }
+# e.g. local author=$(flag --short a --long author --default siraj --required --args $@)"
+function flag() {
+  # Set parameters from flags
+  while [ "$#" -gt 0 ] && [ "$1" != "--args" ] ; do
+    case "${1}" in
+      -b|--isboolean) local isboolean=true ;;
+      -d|--default) local default="$2" ;;
+      -l|--long) local long="$2" ;;
+      -s|--short) local short="$2" ;;
+      -r|--required) local required=true ;;
+    esac
+
+    # Shift twice if there is a flag followed by a value
+    if [[ "$2" == \-* ]] ; then
+      shift 
+    else
+      shift 2
+    fi
+  done
+
+  # Shift the --args argument
+  shift
+
+  # Search for the short or long flag in the remaning args
+  while [ "$#" -gt 0 ] ; do
+    if [ "$1" = "-$short" ] || [ "$1" = "--$long" ] ; then
+      if [ "$isboolean" ] ; then
+        echo true
+        return
+      elif [ "$2" = "" ] ; then
+        break
+      else
+        echo "$2"
+        return
+      fi
+    fi
+    shift
+  done
+  if [ -n "$default" ] ; then
+    echo "$default"
+    return
+  fi
+
+  if [ "$required" ] ; then
+    if [ -n "$short" ] ; then
+      local reqshort="-$short"
+    fi
+    if [ -n "$long" ] ; then
+      local reqlong="--$long"
+    fi
+    if [ -n "$short" ] && [ -n "$long" ] ; then
+      local reqor=" or "
+    fi
+
+    echo "The flag $reqshort$reqor$reqlong is required"
+    return 1
+  fi
+}
 }
 
 # ------ #
