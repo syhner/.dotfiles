@@ -153,6 +153,24 @@ function flag() {
     return 1
   fi
 }
+function blame() {
+  local author=$(flag --short a --long author --default siraj --required --args $@)
+  local files=$(flag --short f --long files --default . --args $@)
+  local output=$(flag --short o --long output --isboolean --default false --args $@)
+  local search=$(flag --short s --long search --args $@)
+
+  local count=0
+  while IFS= read -rd '' file ; read -rd '' nr ; read -r line ; do
+    if git annotate -p -L "$nr,$nr" -- "$file" | grep -q "$author" ; then
+      ((count++))
+      if $output ; then
+        echo "$file:$nr"
+      else
+        echo -ne "($count rows)\r"
+      fi
+    fi
+  done < <(git grep -nz "$search" -- "${files[@]}")
+  echo "($count rows)"
 }
 
 # ------ #
