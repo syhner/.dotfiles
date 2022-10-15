@@ -86,6 +86,15 @@ function setlocaldns() {
 
   echo "\nSuccess! You must add $myip as the first DNS server for each additional device"
 }
+function runinsubdirs() {
+  for d in ./*/ ; do 
+    (
+      cd "$d"
+      echo "${PWD##*/} "
+      "$@"
+    )
+  done
+}
 }
 
 # ------ #
