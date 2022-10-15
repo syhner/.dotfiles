@@ -60,17 +60,18 @@ function greps() {
   eval grep \""$(join "\|" "$@")"\"
 }
 function join() {
-  out="$2"
-  for i in "${@:3}"; do
+  local out="$2"
+  for i in "${@:3}" ; do
     out+="$1$i"
   done
   echo $out
 }
 function resource() {
-  source ~/.zshrc;
+  source ~/.zshrc
 }
 function mkcd() {
-  mkdir -p "$@" && cd "$_";
+  mkdir -p "$@" && cd "$_"
+}
 }
 
 # ------ #
