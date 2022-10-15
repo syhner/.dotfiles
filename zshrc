@@ -53,47 +53,24 @@ fpath=(
 # Functions #
 # --------- #
 
-function gitclonecd() {
-  git clone "$1" && cd "$(basename "$_" .git)"
-}
-function greps() {
-  eval grep \""$(join "\|" "$@")"\"
-}
-function join() {
-  local out="$2"
-  for i in "${@:3}" ; do
-    out+="$1$i"
-  done
-  echo $out
-}
-function resource() {
-  source ~/.zshrc
-}
-function mkcd() {
-  mkdir -p "$@" && cd "$_"
-}
-function setlocaldns() {
-  local myip=$(myip)
+function blame() {
+  local author=$(flag --short a --long author --default siraj --required --args $@)
+  local files=$(flag --short f --long files --default . --args $@)
+  local output=$(flag --short o --long output --isboolean --default false --args $@)
+  local search=$(flag --short s --long search --args $@)
 
-  echo "Setting dnsmasq config"
-  echo "address=/.local/$myip" > /opt/homebrew/etc/dnsmasq.conf
-
-  echo "Restarting dnsmasq (password may be required)"
-  sudo brew services restart dnsmasq
-
-  echo "Setting DNS servers to $myip 8.8.8.8..."
-  networksetup -setdnsservers Wi-Fi $myip 8.8.8.8
-
-  echo "\nSuccess! You must add $myip as the first DNS server for each additional device"
-}
-function runinsubdirs() {
-  for d in ./*/ ; do 
-    (
-      cd "$d"
-      echo "${PWD##*/} "
-      "$@"
-    )
-  done
+  local count=0
+  while IFS= read -rd '' file ; read -rd '' nr ; read -r line ; do
+    if git annotate -p -L "$nr,$nr" -- "$file" | grep -q "$author" ; then
+      ((count++))
+      if $output ; then
+        echo "$file:$nr"
+      else
+        echo -ne "($count rows)\r"
+      fi
+    fi
+  done < <(git grep -nz "$search" -- "${files[@]}")
+  echo "($count rows)"
 }
 # e.g. local author=$(flag --short a --long author --default siraj --required --args $@)"
 function flag() {
@@ -153,24 +130,47 @@ function flag() {
     return 1
   fi
 }
-function blame() {
-  local author=$(flag --short a --long author --default siraj --required --args $@)
-  local files=$(flag --short f --long files --default . --args $@)
-  local output=$(flag --short o --long output --isboolean --default false --args $@)
-  local search=$(flag --short s --long search --args $@)
+function gitclonecd() {
+  git clone "$1" && cd "$(basename "$_" .git)"
+}
+function greps() {
+  eval grep \""$(join "\|" "$@")"\"
+}
+function join() {
+  local out="$2"
+  for i in "${@:3}" ; do
+    out+="$1$i"
+  done
+  echo $out
+}
+function mkcd() {
+  mkdir -p "$@" && cd "$_"
+}
+function resource() {
+  source ~/.zshrc
+}
+function runinsubdirs() {
+  for d in ./*/ ; do 
+    (
+      cd "$d"
+      echo "${PWD##*/} "
+      "$@"
+    )
+  done
+}
+function setlocaldns() {
+  local myip=$(myip)
 
-  local count=0
-  while IFS= read -rd '' file ; read -rd '' nr ; read -r line ; do
-    if git annotate -p -L "$nr,$nr" -- "$file" | grep -q "$author" ; then
-      ((count++))
-      if $output ; then
-        echo "$file:$nr"
-      else
-        echo -ne "($count rows)\r"
-      fi
-    fi
-  done < <(git grep -nz "$search" -- "${files[@]}")
-  echo "($count rows)"
+  echo "Setting dnsmasq config"
+  echo "address=/.local/$myip" > /opt/homebrew/etc/dnsmasq.conf
+
+  echo "Restarting dnsmasq (password may be required)"
+  sudo brew services restart dnsmasq
+
+  echo "Setting DNS servers to $myip 8.8.8.8..."
+  networksetup -setdnsservers Wi-Fi $myip 8.8.8.8
+
+  echo "\nSuccess! You must add $myip as the first DNS server for each additional device"
 }
 
 # ------ #
