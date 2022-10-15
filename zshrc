@@ -72,6 +72,20 @@ function resource() {
 function mkcd() {
   mkdir -p "$@" && cd "$_"
 }
+function setlocaldns() {
+  local myip=$(myip)
+
+  echo "Setting dnsmasq config"
+  echo "address=/.local/$myip" > /opt/homebrew/etc/dnsmasq.conf
+
+  echo "Restarting dnsmasq (password may be required)"
+  sudo brew services restart dnsmasq
+
+  echo "Setting DNS servers to $myip 8.8.8.8..."
+  networksetup -setdnsservers Wi-Fi $myip 8.8.8.8
+
+  echo "\nSuccess! You must add $myip as the first DNS server for each additional device"
+}
 }
 
 # ------ #
