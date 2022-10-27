@@ -181,13 +181,13 @@ function setlocaldns() {
 
 # Customise prompt with spaceship
 source /opt/homebrew/opt/spaceship/spaceship.zsh
-source "$DOTFILES/spaceship.zsh" 
+source "$DOTFILES/load_spaceship.zsh" 
 
 # Brews
-source /opt/homebrew/opt/nvm/nvm.sh
 source /opt/homebrew/etc/profile.d/z.sh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/opt/nvm/nvm.sh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ----------------------------------------------------------------- #
 # ZSH options - https://zsh.sourceforge.io/Doc/Release/Options.html #
