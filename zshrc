@@ -12,6 +12,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Syntax highlighting for man 
 export NULLCMD=bat # Use bat instead of cat
 export NVM_DIR="$HOME/.nvm" # https://github.com/nvm-sh/nvm#installing-and-updating
 export PYENV_ROOT="$HOME/.pyenv" # https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv
+export RBENV_SHELL=zsh # rbenv
 export ZSHRC="$HOME/.zshrc" # Shortcut to this file
 
 # -------------- #
@@ -40,6 +41,7 @@ path=(
   $GEM_HOME/bin
   $JAVA_HOME/bin
   $PYENV_ROOT/bin # https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv
+  "/Users/siraj/.rbenv/shims" # rbenv
   $path
   $ANDROID_SDK_ROOT/emulator # https://reactnative.dev/docs/environment-setup
   $ANDROID_SDK_ROOT/platform-tools # https://reactnative.dev/docs/environment-setup
@@ -181,6 +183,7 @@ function setlocaldns() {
 
 # Customise prompt with spaceship
 source /opt/homebrew/opt/spaceship/spaceship.zsh
+source "$DOTFILES/load_ruby.zsh" # rbenv
 source "$DOTFILES/load_spaceship.zsh" 
 
 # Brews
