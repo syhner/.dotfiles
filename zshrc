@@ -183,7 +183,6 @@ source "$DOTFILES/spaceship.zsh"
 
 # Brews
 source /opt/homebrew/opt/nvm/nvm.sh
-source "$DOTFILES/load_nvm.zsh"
 source /opt/homebrew/etc/profile.d/z.sh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
