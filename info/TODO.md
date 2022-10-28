@@ -14,3 +14,4 @@
 - Option to replace .. ... .... aliases?
 - More zstyle
 - Separate dev and personal
+- https://brailleinstitute.org/wp-content/uploads/atkinson-hyperlegible-font/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514.zip
