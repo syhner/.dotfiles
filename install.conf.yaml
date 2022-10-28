@@ -8,14 +8,14 @@
     ~/.config/bat:
       create: true
       path: config/bat
-    ~/.gitconfig:
-    ~/.mackup.cfg:
-    ~/.nanorc:
-    ~/.zprofile:
-    ~/.zlogin:
-    ~/.zlogout:
-    ~/.zshenv:
-    ~/.zshrc:
+    ~/.gitconfig: .gitconfig
+    ~/.mackup.cfg: .mackup.cfg
+    ~/.nanorc: .nanorc
+    ~/.zprofile: .zprofile
+    ~/.zlogin: .zlogin
+    ~/.zlogout: .zlogout
+    ~/.zshenv: .zshenv
+    ~/.zshrc: .zshrc
 
 - create:
     - ~/Work
