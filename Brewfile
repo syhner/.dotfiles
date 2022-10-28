@@ -40,7 +40,7 @@ cask "avast-security"                               # Antivirus software
 cask "barrier"                                      # Open-source KVM software
 cask "corretto8"                                    # OpenJDK distribution from Amazon
 cask "discord"                                      # Voice and text chat software
-cask "font-fira-code"                     # Free monospaced font with programming ligatures
+cask "font-fira-code"                               # Free monospaced font with programming ligatures
 cask "google-chrome"                                # Web browser
 cask "imageoptim"                                   # Tool to optimize images to a smaller size
 cask "league-of-legends"                            # Multiplayer online battle arena game
