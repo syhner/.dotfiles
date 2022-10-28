@@ -1,4 +1,4 @@
-# AppleScript: do shell script "~/.dotfiles/open_work.sh"
+# AppleScript: do shell script "~/.dotfiles/open/work.sh"
 
 open ~/Documents/Code/Work/main.code-workspace
 open -a "Google Chrome" --args --profile-directory="Work" # Profile name from "~/Library/Application Support/Google/Chrome/Work"
