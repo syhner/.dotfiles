@@ -1,8 +1,8 @@
 echo 'Hello from .zshrc'
 
-source "./zshrc/exports.sh"
-source "./zshrc/aliases.sh"
-source "./zshrc/typesets.sh"
-source "./zshrc/functions.sh"
-source "./zshrc/sources.sh"
-source "./zshrc/config.sh"
+source ./zshrc/exports.zsh
+source ./zshrc/aliases.zsh
+source ./zshrc/typesets.zsh
+source ./zshrc/functions.zsh
+source ./zshrc/sources.zsh
+source ./zshrc/config.zsh

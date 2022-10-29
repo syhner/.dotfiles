@@ -1,6 +1,6 @@
 # Customise prompt with spaceship
 source /opt/homebrew/opt/spaceship/spaceship.zsh
-source "$DOTFILES/load/spaceship.zsh" 
+source ./load/spaceship.zsh
 
 # Brews
 source /opt/homebrew/etc/profile.d/z.sh
