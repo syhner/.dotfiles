@@ -1,4 +1,5 @@
-autoload -U compinit && compinit # List flags with TAB
+# List flags with TAB
+autoload -U compinit && compinit
 
 # Navigate up and down through history starting from what is in input field
 autoload -U up-line-or-beginning-search
@@ -11,4 +12,5 @@ bindkey "^[[B" down-line-or-beginning-search
 # Use arrow keys to navigate between TAB suggestions
 zstyle ':completion:*' menu select
 
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # Case insensitive autocompletion
+# Case insensitive autocompletion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
