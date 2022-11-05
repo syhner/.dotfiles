@@ -30,6 +30,7 @@ brew "postgis"                                      # Adds support for geographi
 brew "pyenv"                                        # Python version management
 brew "rbenv"                                        # Ruby version manager
 brew "spaceship"                                    # Zsh prompt for Astronauts
+brew "terraform"                                    # Tool to build, change, and version infrastructure
 brew "watchman"                                     # Watch files and take action when they change
 brew "z"                                            # Tracks most-used directories to make cd smarter
 brew "zlib"                                         # General-purpose lossless data-compression library
@@ -60,6 +61,7 @@ cask "steam"                                        # Video game digital distrib
 cask "teamviewer"                                   # Remote access and connectivity software focused on security
 cask "visual-studio-code"                           # Open-source code editor
 cask "vlc"                                          # Multimedia player
+cask "vnc-viewer"                                   # Remote desktop application focusing on security
 cask "zulu11"                                       # OpenJDK distribution from Azul
 
 # Mac app store applications
