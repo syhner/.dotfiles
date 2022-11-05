@@ -1,7 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias brewdump='brew bundle dump --force --describe --file=~/.dotfiles/dump.Brewfile'
+alias brewdump='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile.dump'
 alias cmd='command'
 alias exa='exa -aFhl --git' # -a all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
 alias ftrail='<<<${(F)fpath}'
