@@ -10,7 +10,7 @@ tap "homebrew/services"
 brew "awscli"                                       # Official Amazon AWS command-line interface
 brew "bat"                                          # Clone of cat(1) with syntax highlighting and Git integration
 brew "cocoapods"                                    # Dependency manager for Cocoa projects
-brew "dnsmasq", restart_service: true               # Lightweight DNS forwarder and DHCP server
+brew "dnsmasq"                                      # Lightweight DNS forwarder and DHCP server
 brew "docker"                                       # Pack, ship and run any application as a lightweight container
 brew "docker-compose"                               # Isolated development environments using Docker
 brew "exa"                                          # Modern replacement for 'ls'
