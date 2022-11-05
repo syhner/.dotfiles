@@ -1,4 +1,6 @@
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk" # https://reactnative.dev/docs/environment-setup
+export BREWFILE="$HOME/.dotfiles/Brewfile"
+export DOTFILES="$HOME/.dotfiles"
 export GEM_HOME=$HOME/.gem
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home # https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/macos-install.html
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Syntax highlighting for man pages using bat
