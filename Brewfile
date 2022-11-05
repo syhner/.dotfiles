@@ -46,15 +46,18 @@ cask "discord"                                      # Voice and text chat softwa
 cask "font-fira-code"                               # Free monospaced font with programming ligatures
 cask "google-chrome"                                # Web browser
 cask "imageoptim"                                   # Tool to optimize images to a smaller size
+cask "mactex-no-gui"                                # Full TeX Live distribution without GUI applications
 cask "obsidian"                                     # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "pgadmin4"                                     # Administration and development platform for PostgreSQL
 cask "qbittorrent"                                  # Peer to peer Bitorrent client
+cask "raspberry-pi-imager"                          # Imaging utility to install operating systems to a microSD card
 cask "raycast"                                      # Control your tools with a few keystrokes
 cask "react-native-debugger"                        # Standalone app for debugging React Native apps
 cask "scroll-reverser"                              # Choose to reverse scrolling direction individually on trackpad and mouse
 cask "shottr"                                       # Screenshot measurement and annotation tool
 cask "spotify"                                      # Music streaming service
 cask "steam"                                        # Video game digital distribution service
+cask "teamviewer"                                   # Remote access and connectivity software focused on security
 cask "visual-studio-code"                           # Open-source code editor
 cask "vlc"                                          # Multimedia player
 cask "zulu11"                                       # OpenJDK distribution from Azul
