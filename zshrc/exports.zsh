@@ -8,4 +8,5 @@ export NULLCMD=bat # Use bat instead of cat
 export NVM_DIR="$HOME/.nvm" # https://github.com/nvm-sh/nvm#installing-and-updating
 export PYENV_ROOT="$HOME/.pyenv" # https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv
 export RBENV_SHELL=zsh # rbenv
+export WORK="$HOME/Work/main.code-workspace"
 export ZSHRC="$HOME/.zshrc" # Shortcut to this file
