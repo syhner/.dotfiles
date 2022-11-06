@@ -8,5 +8,6 @@ alias ftrail='<<<${(F)fpath}'
 alias ls='exa'
 alias mkdir='mkdir -p'
 alias myip='ipconfig getifaddr en0'
+alias pi='ssh raspberrypi.local -l pi'
 alias sudo='sudo ' # Allow aliases to be sudoed
 alias trail='<<<${(F)path}'
