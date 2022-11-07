@@ -123,5 +123,6 @@ function setlocaldns() {
   echo "Setting DNS servers to $myip 8.8.8.8..."
   networksetup -setdnsservers Wi-Fi $myip 8.8.8.8
 
-  echo "\nSuccess! You must add $myip as the first DNS server for each additional device"
+  echo "\nSuccess! You must add $myip as the first DNS server for each additional device."
+  echo "Add any .local hostnames to your search domains as required"
 }
