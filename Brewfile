@@ -66,7 +66,6 @@ cask "zulu11"                                       # OpenJDK distribution from 
 
 # Mac app store applications
 mas "Dropover", id: 1355679052                      # Easier drag & drop
-mas "GoodNotes 5", id: 1444383602                   # Note-Taking & PDF Markup
 mas "GSE SMART IPTV", id: 1293083751                # Internet Protocol TV
 mas "Hidden Bar", id: 1452453066                    # Hide menu bar items
 mas "iStat Menus", id: 1319778037                   # Menu bar system manager

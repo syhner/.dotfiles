@@ -15,3 +15,8 @@
 - More zstyle
 - Separate dev and personal
 - https://brailleinstitute.org/wp-content/uploads/atkinson-hyperlegible-font/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514.zip
+- Check flag command, allow for combined short flags e.g. '-am'
+- Save VSCode config?
+  - Extensions
+  - Settings
+  - Shortcuts
