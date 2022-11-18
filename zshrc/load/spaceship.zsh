@@ -1,4 +1,4 @@
-source "$DOTFILES/load/spaceship_shlvl.zsh"
+source "$LOAD/spaceship_shlvl.zsh"
 
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stamps section
