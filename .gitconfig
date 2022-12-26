@@ -3,3 +3,13 @@
 	email = 71605633+Syhner@users.noreply.github.com
 [core]
 	editor = nano
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+[push]
+	autoSetupRemote = true
+[alias]
+	unstage = restore --staged
+[init]
+	defaultBranch = main
