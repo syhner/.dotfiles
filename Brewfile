@@ -25,7 +25,7 @@ brew "nano"                                         # Free (GNU) replacement for
 brew "nvm"                                          # Manage multiple Node.js versions
 brew "openjdk"                                      # Development kit for the Java programming language
 brew "openssl@3"                                    # Cryptography and SSL/TLS Toolkit
-brew "postgresql@14", restart_service: true         # Object-relational database system
+brew "postgresql@14"                                # Object-relational database system
 brew "postgis"                                      # Adds support for geographic objects to PostgreSQL
 brew "pyenv"                                        # Python version management
 brew "rbenv"                                        # Ruby version manager
@@ -42,8 +42,10 @@ brew "zsh-syntax-highlighting"                      # Fish shell like syntax hig
 cask "android-studio"                               # Tools for building Android applications
 cask "avast-security"                               # Antivirus software
 cask "barrier"                                      # Open-source KVM software
+cask "bartender"                                    # Menu bar icon organizer
 cask "corretto8"                                    # OpenJDK distribution from Amazon
 cask "discord"                                      # Voice and text chat software
+cask "docker"                                       # App to build and share containerized applications and microservices
 cask "font-fira-code"                               # Free monospaced font with programming ligatures
 cask "google-chrome"                                # Web browser
 cask "imageoptim"                                   # Tool to optimize images to a smaller size
@@ -67,7 +69,6 @@ cask "zulu11"                                       # OpenJDK distribution from 
 # Mac app store applications
 mas "Dropover", id: 1355679052                      # Easier drag & drop
 mas "GSE SMART IPTV", id: 1293083751                # Internet Protocol TV
-mas "Hidden Bar", id: 1452453066                    # Hide menu bar items
 mas "iStat Menus", id: 1319778037                   # Menu bar system manager
 mas "Magnet", id: 441258766                         # Window manager through dragging to screen edges
 mas "Microsoft Excel", id: 462058435                # Spreadsheet software
