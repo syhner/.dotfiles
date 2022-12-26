@@ -20,6 +20,7 @@ SPACESHIP_SHLVL_SUFFIX="${SPACESHIP_SHLVL_SUFFIX=" "}"
 # Show shell level
 spaceship_shlvl() {
   [[ $SPACESHIP_SHLVL_SHOW == false ]] && return
+  [[ $SHLVL == 1 ]] && return
 
   # Display shell level section
   spaceship::section::v4 \
