@@ -7,11 +7,11 @@ tap "homebrew/core"
 tap "homebrew/services"
 
 # Brews (Formulae / Packages)
+brew "act"                                          # Run your GitHub Actions locally 🚀
 brew "awscli"                                       # Official Amazon AWS command-line interface
 brew "bat"                                          # Clone of cat(1) with syntax highlighting and Git integration
 brew "cocoapods"                                    # Dependency manager for Cocoa projects
 brew "dnsmasq"                                      # Lightweight DNS forwarder and DHCP server
-brew "docker"                                       # Pack, ship and run any application as a lightweight container
 brew "docker-compose"                               # Isolated development environments using Docker
 brew "exa"                                          # Modern replacement for 'ls'
 brew "git"                                          # Distributed revision control system
