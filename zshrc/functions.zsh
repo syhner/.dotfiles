@@ -81,18 +81,6 @@ function gitclonecd() {
   git clone "$1" && cd "$(basename "$_" .git)"
 }
 
-export function git-open() {
-  local URL=$(git remote show origin | grep Fetch.URL)
-  
-  if [[ $URL =~ "@(.+):(.+).git" ]] ; then
-    open "https://${match[1]}/${match[2]}"
-  elif [[ $URL =~ "(http.+).git" ]] ; then
-    open "${match[1]}"
-  else
-    echo "Could not extract remote url from $URL"
-  fi
-}
-
 function greps() {
   eval grep \""$(join "\|" "$@")"\"
 }
