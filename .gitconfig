@@ -10,6 +10,7 @@
 [push]
 	autoSetupRemote = true
 [alias]
+	open = !git-open
 	unstage = restore --staged
 [init]
 	defaultBranch = main
