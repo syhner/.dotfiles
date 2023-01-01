@@ -13,15 +13,16 @@
 	open = "!f() { \
 		local URL=$(git remote show origin | grep Fetch.URL) ; \
 		if [[ $URL =~ "@(.+):(.+).git" ]] ; then \
-			open "https://${BASH_REMATCH[1]}/${BASH_REMATCH[2]}" ; \
+			open "https://${BASH_REMATCH[1]}/${BASH_REMATCH[2]}/$1" ; \
 		elif [[ $URL =~ "(http.+).git" ]] ; then \
 			open "${BASH_REMATCH[1]}" ; \
 		else \
 			echo "Could not extract remote url from $URL" ; \
 		fi \
 	}; \
-	f \
-	unset f"
+	f"
 	unstage = restore --staged
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = false
