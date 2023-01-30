@@ -1,5 +1,3 @@
-echo 'Hello from .zshenv'
-
 # Set variables
 export HOMEBREW_CASK_OPTS="--no-quarantine" # Don't quarantine casks installed with Homebrew
 export DOTFILES="$HOME/.dotfiles" # Shortcut to this directory
