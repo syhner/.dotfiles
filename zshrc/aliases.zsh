@@ -1,13 +1,12 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias brewdump='brew bundle dump --force --describe --file=~/.dotfiles/Brewfile.dump'
+alias brewdump='brew bundle dump --describe --file=~/.dotfiles/Brewfile.dump --force'
 alias cmd='command'
-alias exa='exa -aFhl --git' # -a all files except ./ and ../ || -F show file type || -h readable file sizes || -l list format
 alias exitcode='echo $?'
 alias ftrail='<<<${(F)fpath}'
-alias ls='exa'
-alias mkdir='mkdir -p'
+alias ls='exa --across --all --classify --git --group-directories-first'
+alias mkdir='mkdir --parents'
 alias myip='ipconfig getifaddr en0'
 alias pi='ssh raspberrypi.local -l pi'
 alias sudo='sudo ' # Allow aliases to be sudoed
