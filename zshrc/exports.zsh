@@ -1,5 +1,4 @@
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-docs/environment-setup
+export ANDROID_HOME="$HOME/Library/Android/sdk" # https://reactnative.dev/docs/environment-setup
 export BREWFILE="$HOME/.dotfiles/Brewfile"
 export DOTFILES="$HOME/.dotfiles"
 export GEM_HOME="$HOME/.gem"
