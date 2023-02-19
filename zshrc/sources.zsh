@@ -10,3 +10,4 @@ source "$LOAD/pyenv.zsh"
 source "$LOAD/ruby.zsh" # rbenv
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh # zsh-autosuggestions
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # zsh-syntax-highlighting
+source "$LOAD/fzf.zsh"

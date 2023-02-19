@@ -14,6 +14,7 @@ brew "cocoapods"                                    # Dependency manager for Coc
 brew "dnsmasq"                                      # Lightweight DNS forwarder and DHCP server
 brew "docker-compose"                               # Isolated development environments using Docker
 brew "exa"                                          # Modern replacement for 'ls'
+brew "fzf"                                          # Command-line fuzzy finder written in Go
 brew "git"                                          # Distributed revision control system
 brew "graphviz"                                     # Graph visualization software from AT&T and Bell Labs
 brew "httpie"                                       # User-friendly cURL replacement (command-line HTTP client)
