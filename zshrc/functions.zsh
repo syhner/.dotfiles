@@ -77,6 +77,10 @@ function flag() {
   fi
 }
 
+function gitcd() {
+  cd $(git rev-parse --show-toplevel)/$1
+}
+
 function gitclonecd() {
   git clone "$1" && cd "$(basename "$_" .git)"
 }
