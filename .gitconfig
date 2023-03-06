@@ -10,6 +10,7 @@
 [push]
 	autoSetupRemote = true
 [alias]
+	cd = cd "$(git rev-parse --show-toplevel)"
 	open = "!f() { \
 		local URL=$(git remote show origin | grep Fetch.URL) ; \
 		if [[ $URL =~ "@(.+):(.+).git" ]] ; then \
