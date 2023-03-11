@@ -1,3 +1,4 @@
+- pnpm and pnpm install-completion. Install changeset, turbo, and other globals.
 - Be able to use exa without sorting by name (for example when searching multiple directories)
 - Show exa colors with grep
 - Mac setup

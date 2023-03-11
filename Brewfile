@@ -30,6 +30,7 @@ brew "openssl@3"                                    # Cryptography and SSL/TLS T
 brew "postgresql@14"                                # Object-relational database system
 brew "postgis"                                      # Adds support for geographic objects to PostgreSQL
 brew "pyenv"                                        # Python version management
+brew "pnpm"                                         # Fast, disk space efficient package manager
 brew "rbenv"                                        # Ruby version manager
 brew "spaceship"                                    # Zsh prompt for Astronauts
 brew "terraform"                                    # Tool to build, change, and version infrastructure
