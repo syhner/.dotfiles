@@ -1,4 +1,6 @@
-- pnpm and pnpm install-completion. Install changeset, turbo, and other globals.
+- kill application on port with signal
+- fnm instead of nvm
+- pnpm and pnpm install-completion. Install changeset, turbo, vercel, and other globals
 - Be able to use exa without sorting by name (for example when searching multiple directories)
 - Show exa colors with grep
 - Mac setup
