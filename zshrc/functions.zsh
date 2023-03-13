@@ -132,5 +132,5 @@ function setlocaldns() {
 }
 
 function zc() {
-  eval "z $1 && code ."
+  eval "z $1 && code . && cd -"
 }
