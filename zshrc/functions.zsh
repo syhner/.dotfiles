@@ -130,3 +130,7 @@ function setlocaldns() {
   echo "\nSuccess! You must add $myip as the first DNS server for each additional device."
   echo "Add any .local hostnames to your search domains as required"
 }
+
+function zc() {
+  eval "z $1 && code ."
+}
