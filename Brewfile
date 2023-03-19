@@ -71,6 +71,8 @@ cask "vnc-viewer"                                   # Remote desktop application
 cask "zulu11"                                       # OpenJDK distribution from Azul
 
 # Mac app store applications
+# mas "Affinity Photo 2", id: 1616822987              # Graphics editor
+# mas "DaVinci Resolve Studio", id: 900392332         # Video editor
 mas "Dropover", id: 1355679052                      # Easier drag & drop
 mas "GSE SMART IPTV", id: 1293083751                # Internet Protocol TV
 mas "iStat Menus", id: 1319778037                   # Menu bar system manager
