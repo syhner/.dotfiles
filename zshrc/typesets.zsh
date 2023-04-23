@@ -9,6 +9,7 @@ path=(
   $ANDROID_HOME/emulator # https://reactnative.dev/docs/environment-setup
   $ANDROID_HOME/platform-tools # https://reactnative.dev/docs/environment-setup
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" # https://code.visualstudio.com/docs/setup/mac
+  $HOME/bin
 )
 
 typeset -U fpath
