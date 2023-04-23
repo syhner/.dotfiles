@@ -21,6 +21,7 @@ brew "git"                                          # Distributed revision contr
 brew "graphviz"                                     # Graph visualization software from AT&T and Bell Labs
 brew "httpie"                                       # User-friendly cURL replacement (command-line HTTP client)
 brew "jenv"                                         # Manage your Java environment
+brew "jq"                                           # Lightweight and flexible command-line JSON processor
 brew "less"                                         # Pager program similar to more
 brew "mackup"                                       # Keep your Mac's application settings in sync
 brew "mas"                                          # Mac App Store command-line interface
