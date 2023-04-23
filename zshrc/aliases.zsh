@@ -11,3 +11,4 @@ alias myip='ipconfig getifaddr en0'
 alias pi='ssh raspberrypi.local -l pi'
 alias sudo='sudo ' # Allow aliases to be sudoed
 alias trail='<<<${(F)path}'
+alias work='code ~/Work/all.code-workspace'
