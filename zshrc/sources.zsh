@@ -10,5 +10,6 @@ source "$LOAD/nvm.zsh"
 source "$LOAD/pnpm.zsh"
 source "$LOAD/pyenv.zsh"
 source "$LOAD/rbenv.zsh"
+source "$LOAD/terraform.zsh"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh # zsh-autosuggestions
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # zsh-syntax-highlighting
