@@ -26,3 +26,5 @@
 	defaultBranch = main
 [commit]
 	gpgsign = false
+[merge]
+	tool = vscode
