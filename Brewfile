@@ -1,4 +1,5 @@
 # Taps (Repositories)
+tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -18,6 +19,7 @@ brew "ffmpeg"                                       # Play, record, convert, and
 brew "fzf"                                          # Command-line fuzzy finder written in Go
 brew "gh"                                           # GitHub command-line tool
 brew "git"                                          # Distributed revision control system
+brew "gnupg"                                        # GNU Pretty Good Privacy (PGP) package 
 brew "graphviz"                                     # Graph visualization software from AT&T and Bell Labs
 brew "httpie"                                       # User-friendly cURL replacement (command-line HTTP client)
 brew "jenv"                                         # Manage your Java environment
@@ -36,6 +38,7 @@ brew "pnpm"                                         # Fast, disk space efficient
 brew "rbenv"                                        # Ruby version manager
 brew "spaceship"                                    # Zsh prompt for Astronauts
 brew "tree"                                         # Display directories as trees (with optional color/HTML output)
+brew "hashicorp/tap/vault"                          # Vault
 brew "watchman"                                     # Watch files and take action when they change
 brew "z"                                            # Tracks most-used directories to make cd smarter
 brew "zlib"                                         # General-purpose lossless data-compression library
@@ -50,11 +53,11 @@ cask "avast-security"                               # Antivirus software
 cask "barrier"                                      # Open-source KVM software
 cask "bartender"                                    # Menu bar icon organizer
 cask "corretto8"                                    # OpenJDK distribution from Amazon
-
 cask "dbeaver-community"                            # Universal database tool and SQL client
 cask "discord"                                      # Voice and text chat software
 cask "docker"                                       # App to build and share containerized applications and microservices
 cask "font-fira-code"                               # Free monospaced font with programming ligatures
+cask "font-input"                                   # Fonts for code  
 cask "google-chrome"                                # Web browser
 cask "imageoptim"                                   # Tool to optimize images to a smaller size
 cask "linearmouse"                                  # Customize mouse behavior
@@ -65,10 +68,12 @@ cask "qbittorrent"                                  # Peer to peer Bitorrent cli
 cask "raspberry-pi-imager"                          # Imaging utility to install operating systems to a microSD card
 cask "raycast"                                      # Control your tools with a few keystrokes
 cask "react-native-debugger"                        # Standalone app for debugging React Native apps
+cask "slack"                                        # Team communication and collaboration software    
 cask "scroll-reverser"                              # Choose to reverse scrolling direction individually on trackpad and mouse
 cask "shottr"                                       # Screenshot measurement and annotation tool
 cask "spotify"                                      # Music streaming service
 cask "steam"                                        # Video game digital distribution service
+cask "streamlabs-obs"                               # All-in-one live streaming software  
 cask "teamviewer"                                   # Remote access and connectivity software focused on security
 cask "tor-browser"                                  # Web browser focusing on security
 cask "visual-studio-code"                           # Open-source code editor
