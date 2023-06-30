@@ -12,6 +12,7 @@ brew "act"                                          # Run your GitHub Actions lo
 brew "awscli"                                       # Official Amazon AWS command-line interface
 brew "bat"                                          # Clone of cat(1) with syntax highlighting and Git integration
 brew "cocoapods"                                    # Dependency manager for Cocoa projects
+brew "curl"                                         # Get a file from an HTTP, HTTPS or FTP server
 brew "dnsmasq"                                      # Lightweight DNS forwarder and DHCP server
 brew "docker-compose"                               # Isolated development environments using Docker
 brew "exa"                                          # Modern replacement for 'ls'
@@ -44,6 +45,7 @@ brew "z"                                            # Tracks most-used directori
 brew "zlib"                                         # General-purpose lossless data-compression library
 brew "zsh"                                          # UNIX shell (command interpreter)
 brew "zsh-autosuggestions"                          # Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-completions"                              # Additional completion definitions for zsh
 brew "zsh-syntax-highlighting"                      # Fish shell like syntax highlighting for zsh
 brew "warrensbox/tap/tfswitch"                      # Sswitch between terraform versions
 
@@ -63,6 +65,7 @@ cask "imageoptim"                                   # Tool to optimize images to
 cask "linearmouse"                                  # Customize mouse behavior
 cask "mactex-no-gui"                                # Full TeX Live distribution without GUI applications
 cask "mission-control-plus"                         # Manage your windows in Mission Control
+cask "ngrok"                                        # Reverse proxy, secure introspectable tunnels to localhost
 cask "obsidian"                                     # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "qbittorrent"                                  # Peer to peer Bitorrent client
 cask "raspberry-pi-imager"                          # Imaging utility to install operating systems to a microSD card

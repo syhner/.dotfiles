@@ -15,5 +15,6 @@ path=(
 typeset -U fpath
 fpath=(
   "$HOMEBREW_PREFIX/share/zsh/site-functions"
+  "$HOMEBREW_PREFIX/share/zsh-completions"
   $fpath
 )
