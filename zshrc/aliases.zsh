@@ -9,6 +9,7 @@ alias ls='exa --across --all --classify --git --group-directories-first'
 alias mkdir='mkdir -p'
 alias myip='ipconfig getifaddr en0'
 alias pi='ssh raspberrypi.local -l pi'
+alias rp='ngrok --domain=174ee0e60828-8717937222566027958.ngrok-free.app' # Reverse proxy
 alias sudo='sudo ' # Allow aliases to be sudoed
 alias tf='terraform'
 alias trail='<<<${(F)path}'
