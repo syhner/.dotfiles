@@ -11,6 +11,7 @@ tap "homebrew/services"
 brew "act"                                          # Run your GitHub Actions locally 🚀
 brew "awscli"                                       # Official Amazon AWS command-line interface
 brew "bat"                                          # Clone of cat(1) with syntax highlighting and Git integration
+brew "cloudflared"                                  # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cocoapods"                                    # Dependency manager for Cocoa projects
 brew "curl"                                         # Get a file from an HTTP, HTTPS or FTP server
 brew "dnsmasq"                                      # Lightweight DNS forwarder and DHCP server
