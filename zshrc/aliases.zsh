@@ -10,7 +10,7 @@ alias mkdir='mkdir -p'
 alias myip='ipconfig getifaddr en0'
 alias pi='ssh raspberrypi.local -l pi'
 alias expose-cf='cloudflared tunnel run local'
-alias expose-ng='ngrok --domain=174ee0e60828-8717937222566027958.ngrok-free.app' # expose-ngrok http 3000
+alias expose-ng="ngrok --domain=$NGROK_DOMAIN" # expose-ngrok http 3000
 alias sudo='sudo ' # Allow aliases to be sudoed
 alias tf='terraform'
 alias trail='<<<${(F)path}'
