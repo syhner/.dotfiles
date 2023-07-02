@@ -74,6 +74,7 @@ cask "raycast"                                      # Control your tools with a 
 cask "react-native-debugger"                        # Standalone app for debugging React Native apps
 cask "slack"                                        # Team communication and collaboration software    
 cask "scroll-reverser"                              # Choose to reverse scrolling direction individually on trackpad and mouse
+cask "setapp"                                       # Collection of apps available by subscription
 cask "shottr"                                       # Screenshot measurement and annotation tool
 cask "spotify"                                      # Music streaming service
 cask "steam"                                        # Video game digital distribution service
