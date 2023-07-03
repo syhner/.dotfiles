@@ -78,7 +78,8 @@ cask "setapp"                                       # Collection of apps availab
 cask "shottr"                                       # Screenshot measurement and annotation tool
 cask "spotify"                                      # Music streaming service
 cask "steam"                                        # Video game digital distribution service
-cask "streamlabs-obs"                               # All-in-one live streaming software  
+cask "streamlabs-obs"                               # All-in-one live streaming software
+cask "tailscale"                                    # Easiest, most secure way to use WireGuard and 2FA
 cask "teamviewer"                                   # Remote access and connectivity software focused on security
 cask "tor-browser"                                  # Web browser focusing on security
 cask "visual-studio-code"                           # Open-source code editor
