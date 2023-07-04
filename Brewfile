@@ -72,6 +72,7 @@ cask "qbittorrent"                                  # Peer to peer Bitorrent cli
 cask "raspberry-pi-imager"                          # Imaging utility to install operating systems to a microSD card
 cask "raycast"                                      # Control your tools with a few keystrokes
 cask "react-native-debugger"                        # Standalone app for debugging React Native apps
+cask "rewind"                                       # Record and search your screen and audio
 cask "slack"                                        # Team communication and collaboration software    
 cask "scroll-reverser"                              # Choose to reverse scrolling direction individually on trackpad and mouse
 cask "setapp"                                       # Collection of apps available by subscription
@@ -97,8 +98,6 @@ mas "Magnet", id: 441258766                         # Window manager through dra
 mas "Microsoft Excel", id: 462058435                # Spreadsheet software
 mas "TestFlight", id: 899247664                     # App store beta testing
 mas "TickTick:To-Do List, Calendar", id: 966085870  # To-do list
-mas "NordVPN", id: 905953485                        # Secure & private VPN
-mas "TestFlight", id: 899247664                     # MacOS beta testing
 mas "TextSniper", id: 1528890965                    # Extract on-screen text
 mas "TickTick", id: 966085870                       # To-do lists
 mas "WhatsApp", id: 1147396723                      # Insant messager and VOiP
