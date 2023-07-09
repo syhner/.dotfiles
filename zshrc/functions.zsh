@@ -131,6 +131,6 @@ function setlocaldns() {
   echo "Add any .local hostnames to your search domains as required"
 }
 
-function zc() {
+function zcode() {
   eval "z $1 && code . && cd -"
 }
