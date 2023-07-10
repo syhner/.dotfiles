@@ -73,7 +73,6 @@ cask "raspberry-pi-imager"                          # Imaging utility to install
 cask "raycast"                                      # Control your tools with a few keystrokes
 cask "react-native-debugger"                        # Standalone app for debugging React Native apps
 cask "rewind"                                       # Record and search your screen and audio
-cask "rocket"                                       # Emoji picker optimized for blind people
 cask "slack"                                        # Team communication and collaboration software    
 cask "scroll-reverser"                              # Choose to reverse scrolling direction individually on trackpad and mouse
 cask "setapp"                                       # Collection of apps available by subscription
