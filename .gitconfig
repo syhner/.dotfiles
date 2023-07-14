@@ -1,6 +1,3 @@
-[user]
-	name = Siraj Hussain
-	email = 71605633+Syhner@users.noreply.github.com
 [core]
 	editor = nano
 [diff]
@@ -28,3 +25,9 @@
 	gpgsign = false
 [merge]
 	tool = vscode
+[includeIf "gitdir:~/repos/"]
+	path = .gitconfig-personal
+[includeIf "gitdir:~/.dotfiles/"]
+	path = .gitconfig-personal
+[includeIf "gitdir:~/work/"]
+	path = .gitconfig-work
