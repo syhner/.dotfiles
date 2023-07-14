@@ -11,5 +11,5 @@ export NVM_DIR="$HOME/.nvm" # https://github.com/nvm-sh/nvm#installing-and-updat
 export PNPM_HOME="$HOME/Library/pnpm"
 export PYENV_ROOT="$HOME/.pyenv" # https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv
 export RBENV_SHELL=zsh # rbenv
-export WORK="$HOME/Work/main.code-workspace"
+export WORK="$HOME/work/main.code-workspace"
 export ZSHRC="$HOME/.zshrc"

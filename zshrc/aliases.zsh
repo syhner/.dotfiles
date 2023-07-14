@@ -14,4 +14,4 @@ alias expose-ng="ngrok --domain=$NGROK_DOMAIN" # expose-ngrok http 3000
 alias sudo='sudo ' # Allow aliases to be sudoed
 alias tf='terraform'
 alias trail='<<<${(F)path}'
-alias work='code ~/Work/all.code-workspace'
+alias work='code ~/work/all.code-workspace'

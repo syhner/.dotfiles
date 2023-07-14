@@ -18,7 +18,7 @@
     ~/.zshrc: .zshrc
 
 - create:
-    - ~/Work
+    - ~/work
 
 - shell:
     - command: ./setup/homebrew.zsh
