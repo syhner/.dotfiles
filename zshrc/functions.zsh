@@ -131,6 +131,13 @@ function setlocaldns() {
   echo "Add any .local hostnames to your search domains as required"
 }
 
+# usage: zcode [-r] <project name>
 function zcode() {
+  local reuse=$(flag --short r --long reuse --isboolean --default false --args $@)
+  # Write a conditional based on whether reuse is true or false
+  if $reuse; then
+    eval "z $2 && code -r . && cd -"
+  else
   eval "z $1 && code . && cd -"
+  fi
 }
