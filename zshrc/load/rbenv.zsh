@@ -8,9 +8,11 @@ rbenv() {
   fi
 
   case "$command" in
-  rehash|shell)
-    eval "$(rbenv "sh-$command" "$@")";;
+  rehash | shell)
+    eval "$(rbenv "sh-$command" "$@")"
+    ;;
   *)
-    command rbenv "$command" "$@";;
+    command rbenv "$command" "$@"
+    ;;
   esac
 }

@@ -5,10 +5,14 @@ function blame() {
   local search=$(flag --short s --long search --args $@)
 
   local count=0
-  while IFS= read -rd '' file ; read -rd '' nr ; read -r line ; do
-    if git annotate -p -L "$nr,$nr" -- "$file" | grep -q "$author" ; then
+  while
+    IFS= read -rd '' file
+    read -rd '' nr
+    read -r line
+  do
+    if git annotate -p -L "$nr,$nr" -- "$file" | grep -q "$author"; then
       ((count++))
-      if $output ; then
+      if $output; then
         echo "$file:$nr"
       else
         echo -ne "($count rows)\r"
@@ -21,18 +25,18 @@ function blame() {
 # e.g. local author=$(flag --short a --long author --default siraj --required --args $@)"
 function flag() {
   # Set parameters from flags
-  while [ "$#" -gt 0 ] && [ "$1" != "--args" ] ; do
+  while [ "$#" -gt 0 ] && [ "$1" != "--args" ]; do
     case "${1}" in
-      -b|--isboolean) local isboolean=true ;;
-      -d|--default) local default="$2" ;;
-      -l|--long) local long="$2" ;;
-      -s|--short) local short="$2" ;;
-      -r|--required) local required=true ;;
+    -b | --isboolean) local isboolean=true ;;
+    -d | --default) local default="$2" ;;
+    -l | --long) local long="$2" ;;
+    -s | --short) local short="$2" ;;
+    -r | --required) local required=true ;;
     esac
 
     # Shift twice if there is a flag followed by a value
-    if [[ "$2" == \-* ]] ; then
-      shift 
+    if [[ "$2" == \-* ]]; then
+      shift
     else
       shift 2
     fi
@@ -42,12 +46,12 @@ function flag() {
   shift
 
   # Search for the short or long flag in the remaning args
-  while [ "$#" -gt 0 ] ; do
-    if [ "$1" = "-$short" ] || [ "$1" = "--$long" ] ; then
-      if [ "$isboolean" ] ; then
+  while [ "$#" -gt 0 ]; do
+    if [ "$1" = "-$short" ] || [ "$1" = "--$long" ]; then
+      if [ "$isboolean" ]; then
         echo true
         return
-      elif [ "$2" = "" ] ; then
+      elif [ "$2" = "" ]; then
         break
       else
         echo "$2"
@@ -56,19 +60,19 @@ function flag() {
     fi
     shift
   done
-  if [ -n "$default" ] ; then
+  if [ -n "$default" ]; then
     echo "$default"
     return
   fi
 
-  if [ "$required" ] ; then
-    if [ -n "$short" ] ; then
+  if [ "$required" ]; then
+    if [ -n "$short" ]; then
       local reqshort="-$short"
     fi
-    if [ -n "$long" ] ; then
+    if [ -n "$long" ]; then
       local reqlong="--$long"
     fi
-    if [ -n "$short" ] && [ -n "$long" ] ; then
+    if [ -n "$short" ] && [ -n "$long" ]; then
       local reqor=" or "
     fi
 
@@ -91,7 +95,7 @@ function greps() {
 
 function join() {
   local out="$2"
-  for i in "${@:3}" ; do
+  for i in "${@:3}"; do
     out+="$1$i"
   done
   echo $out
@@ -106,7 +110,7 @@ function resource() {
 }
 
 function runinsubdirs() {
-  for d in ./*/ ; do 
+  for d in ./*/; do
     (
       cd "$d"
       echo "${PWD##*/} "
@@ -119,7 +123,7 @@ function setlocaldns() {
   local myip=$(myip)
 
   echo "Setting dnsmasq config"
-  echo "address=/.local/$myip" > /opt/homebrew/etc/dnsmasq.conf
+  echo "address=/.local/$myip" >/opt/homebrew/etc/dnsmasq.conf
 
   echo "Restarting dnsmasq (password may be required)"
   sudo brew services restart dnsmasq
@@ -138,6 +142,6 @@ function zcode() {
   if $reuse; then
     eval "z $2 && code -r . && cd -"
   else
-  eval "z $1 && code . && cd -"
+    eval "z $1 && code . && cd -"
   fi
 }
