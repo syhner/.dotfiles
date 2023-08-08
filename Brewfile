@@ -95,11 +95,9 @@ mas "Dropover", id: 1355679052                      # Easier drag & drop
 mas "GSE SMART IPTV", id: 1293083751                # Internet Protocol TV
 mas "iStat Menus", id: 1319778037                   # Menu bar system manager
 mas "Magnet", id: 441258766                         # Window manager through dragging to screen edges
-mas "Microsoft Excel", id: 462058435                # Spreadsheet software
 mas "TestFlight", id: 899247664                     # App store beta testing
 mas "TickTick:To-Do List, Calendar", id: 966085870  # To-do list
 mas "TextSniper", id: 1528890965                    # Extract on-screen text
-mas "TickTick", id: 966085870                       # To-do lists
 mas "WhatsApp", id: 1147396723                      # Insant messager and VOiP
 mas "Xcode", id: 497799835                          # Build apps for Apple devices
 mas "Yubico Authenticator", id: 1497506650          # 2FA with Yubikey
