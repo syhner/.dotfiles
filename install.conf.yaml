@@ -8,6 +8,9 @@
     ~/.config/bat:
       create: true
       path: config/bat
+    ~/.config/karabiner:
+      create: true
+      path: config/karabiner
     ~/.config/skhd:
       create: true
       path: config/skhd

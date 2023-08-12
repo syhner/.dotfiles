@@ -48,4 +48,4 @@ ctrl - y : yabai -m space --mirror y-axis
 ctrl - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # testing
-ctrl + alt + cmd - t : say test
+shift + ctrl + alt + cmd - t : say test

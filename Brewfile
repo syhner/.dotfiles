@@ -65,6 +65,7 @@ cask "font-fira-code"                               # Free monospaced font with 
 cask "font-input"                                   # Fonts for code  
 cask "google-chrome"                                # Web browser
 cask "imageoptim"                                   # Tool to optimize images to a smaller size
+cask "karabiner-elements"                      # Keyboard customizer
 cask "linearmouse"                                  # Customize mouse behavior
 cask "mactex-no-gui"                                # Full TeX Live distribution without GUI applications
 cask "mission-control-plus"                         # Manage your windows in Mission Control
