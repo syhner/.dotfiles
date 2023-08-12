@@ -1,3 +1,7 @@
+# load scripting additions
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
 # default layout (can be bsp, stack or float)
 yabai -m config layout bsp
 
@@ -26,4 +30,10 @@ yabai -m mouse_drop_action swap
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
-yabai -m rule --add app="^Discord$" manage=off
+
+# automatically move some apps to specific spaces
+yabai -m rule --add app="^Obsidian$" space=2
+yabai -m rule --add app="Chrome$" space=3
+yabai -m rule --add app="Code$" space=4
+yabai -m rule --add app="^Discord$" space=5
+yabai -m rule --add app="^Spotify$" space=6
