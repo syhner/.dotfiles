@@ -41,6 +41,8 @@ brew "rbenv"                                        # Ruby version manager
 brew "spaceship"                                    # Zsh prompt for Astronauts
 brew "tree"                                         # Display directories as trees (with optional color/HTML output)
 brew "hashicorp/tap/vault"                          # Vault
+brew "koekeishiya/formulae/skhd"                    # Simple hotkey-daemon for macOS.
+brew "koekeishiya/formulae/yabai"                   # A tiling window manager for macOS based on binary space partitioning.
 brew "watchman"                                     # Watch files and take action when they change
 brew "z"                                            # Tracks most-used directories to make cd smarter
 brew "zlib"                                         # General-purpose lossless data-compression library

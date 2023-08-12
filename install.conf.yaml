@@ -8,6 +8,12 @@
     ~/.config/bat:
       create: true
       path: config/bat
+    ~/.config/skhd:
+      create: true
+      path: config/skhd
+    ~/.config/yabai:
+      create: true
+      path: config/yabai
     ~/.gitconfig: .gitconfig
     ~/.mackup.cfg: .mackup.cfg
     ~/.nanorc: .nanorc
