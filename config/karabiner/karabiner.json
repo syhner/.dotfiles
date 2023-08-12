@@ -20,7 +20,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change caps_lock to command+control+option+shift.",
+                                "description": "Change caps_lock to control+option+command.",
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": {
@@ -31,11 +31,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_shift",
+                                        "key_code": "left_control",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_control",
-                                            "left_option"
+                                            "left_option",
+                                            "left_command"
                                         ]
                                     }
                                 ],

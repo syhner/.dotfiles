@@ -20,6 +20,7 @@
     ~/.gitconfig: .gitconfig
     ~/.mackup.cfg: .mackup.cfg
     ~/.nanorc: .nanorc
+    ~/.tmux.conf: .tmux.conf
     ~/.zprofile: .zprofile
     ~/.zlogin: .zlogin
     ~/.zlogout: .zlogout
