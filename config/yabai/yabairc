@@ -30,11 +30,15 @@ yabai -m mouse_drop_action swap
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
 
 # automatically move some apps to specific spaces
-yabai -m rule --add app="^Obsidian$" space=2
-yabai -m rule --add app="Chrome$" space=3
-yabai -m rule --add app="^Discord$" space=4
-yabai -m rule --add app="^Spotify$" space=5
-yabai -m rule --add app="Code$" space=6
-yabai -m rule --add app="Terminal$" space=7
+yabai -m rule --add app="^Obsidian$" space=1
+yabai -m rule --add app="Chrome$" space=2
+yabai -m rule --add app="^Discord$" space=3
+yabai -m rule --add app="^Mail$" space=3
+yabai -m rule --add app="^Messages$" space=3
+yabai -m rule --add app="^Slack$" space=3
+yabai -m rule --add app="^Spotify$" space=4
+yabai -m rule --add app="Code$" space=5
+yabai -m rule --add app="Terminal$" space=6
