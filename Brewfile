@@ -58,7 +58,6 @@ cask "avast-security"                               # Antivirus software
 cask "barrier"                                      # Open-source KVM software
 cask "bartender"                                    # Menu bar icon organizer
 cask "corretto8"                                    # OpenJDK distribution from Amazon
-cask "dbeaver-community"                            # Universal database tool and SQL client
 cask "discord"                                      # Voice and text chat software
 cask "docker"                                       # App to build and share containerized applications and microservices
 cask "font-fira-code"                               # Free monospaced font with programming ligatures
@@ -83,6 +82,7 @@ cask "shottr"                                       # Screenshot measurement and
 cask "spotify"                                      # Music streaming service
 cask "steam"                                        # Video game digital distribution service
 cask "streamlabs-obs"                               # All-in-one live streaming software
+cask "tableplus"                                    # Native GUI tool for relational databases
 cask "tailscale"                                    # Easiest, most secure way to use WireGuard and 2FA
 cask "teamviewer"                                   # Remote access and connectivity software focused on security
 cask "tor-browser"                                  # Web browser focusing on security
