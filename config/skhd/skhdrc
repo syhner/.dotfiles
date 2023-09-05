@@ -1,21 +1,29 @@
-# change focus within space
-ctrl + alt + cmd - up : yabai -m window --focus north
-ctrl + alt + cmd - down : yabai -m window --focus south
-ctrl + alt + cmd - left : yabai -m window --focus west
-ctrl + alt + cmd - right : yabai -m window --focus east
+# change focus within space (or display if no space)
+ctrl + alt + cmd - up : yabai -m window --focus north || yabai -m display --focus north
+ctrl + alt + cmd - down : yabai -m window --focus south || yabai -m display --focus south
+ctrl + alt + cmd - left : yabai -m window --focus west || yabai -m display --focus west
+ctrl + alt + cmd - right : yabai -m window --focus east || yabai -m display --focus east
 
-# change focus between external displays
-ctrl + alt + cmd - 0x1B : yabai -m display --focus west # 0x1B is -
-ctrl + alt + cmd - 0x18 : yabai -m display --focus east # 0x18 is =
+# swap windows (display only)
+ctrl + alt + cmd - w : yabai -m display --focus north
+ctrl + alt + cmd - s : yabai -m display --focus south
+ctrl + alt + cmd - a : yabai -m display --focus west
+ctrl + alt + cmd - d : yabai -m display --focus east
 
-# swap windows
-ctrl + alt + cmd + shift - up : yabai -m window --swap north
-ctrl + alt + cmd + shift - down : yabai -m window --swap south
-ctrl + alt + cmd + shift - left : yabai -m window --swap west
-ctrl + alt + cmd + shift - right : yabai -m window --swap east
+# swap windows within space (or display if no space)
+ctrl + alt + cmd + shift - up : yabai -m window --swap north || yabai -m window --display north
+ctrl + alt + cmd + shift - down : yabai -m window --swap south || yabai -m window --display south
+ctrl + alt + cmd + shift - left : yabai -m window --swap west || yabai -m window --display west
+ctrl + alt + cmd + shift - right : yabai -m window --swap east || yabai -m window --display east
+
+# swap windows (display only)
+ctrl + alt + cmd + shift - w : yabai -m window --display north
+ctrl + alt + cmd + shift - s : yabai -m window --display south
+ctrl + alt + cmd + shift - a : yabai -m window --display west
+ctrl + alt + cmd + shift - d : yabai -m window --display east
 
 # move window between spaces
-ctrl + alt + cmd + shift - 0x21 : say previous                 # 0x21 is [
+ctrl + alt + cmd + shift - 0x21 : yabai -m window --focus prev # 0x21 is [
 ctrl + alt + cmd + shift - 0x1E : yabai -m window --space next # 0x1E is ]
 
 # move window to space
@@ -26,6 +34,8 @@ ctrl + alt + cmd + shift - 4 : yabai -m window --space 4
 ctrl + alt + cmd + shift - 5 : yabai -m window --space 5
 ctrl + alt + cmd + shift - 6 : yabai -m window --space 6
 ctrl + alt + cmd + shift - 7 : yabai -m window --space 7
+ctrl + alt + cmd + shift - 8 : yabai -m window --space 8
+ctrl + alt + cmd + shift - 9 : yabai -m window --space 9
 
 # move window and split
 ctrl + alt + cmd + shift - k : yabai -m window --warp north
