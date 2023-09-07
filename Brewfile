@@ -43,6 +43,7 @@ brew "tree"                                         # Display directories as tre
 brew "hashicorp/tap/vault"                          # Vault
 brew "koekeishiya/formulae/skhd"                    # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/yabai"                   # A tiling window manager for macOS based on binary space partitioning.
+brew "oven-sh/bun/bun"                              # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "watchman"                                     # Watch files and take action when they change
 brew "z"                                            # Tracks most-used directories to make cd smarter
 brew "zlib"                                         # General-purpose lossless data-compression library
