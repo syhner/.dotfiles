@@ -6,6 +6,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home # h
 export LOAD="$HOME/.dotfiles/zshrc/load"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Syntax highlighting for man pages using bat
 export NGROK_DOMAIN="174ee0e60828-8717937222566027958.ngrok-free.app"
+export NGROK_EDGE="edghts_2V6yxVlqRRVcUEyJUQONjCkPWo1"
 export NULLCMD=bat          # Use bat instead of cat
 export NVM_DIR="$HOME/.nvm" # https://github.com/nvm-sh/nvm#installing-and-updating
 export PNPM_HOME="$HOME/Library/pnpm"
