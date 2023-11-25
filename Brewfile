@@ -103,5 +103,6 @@ mas "TestFlight", id: 899247664                     # App store beta testing
 mas "TickTick:To-Do List, Calendar", id: 966085870  # To-do list
 mas "TextSniper", id: 1528890965                    # Extract on-screen text
 mas "WhatsApp", id: 1147396723                      # Insant messager and VOiP
+mas "WireGuard", id: 1451685025                     # Official WireGuard VPN client
 mas "Xcode", id: 497799835                          # Build apps for Apple devices
 mas "Yubico Authenticator", id: 1497506650          # 2FA with Yubikey
