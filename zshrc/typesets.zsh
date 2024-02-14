@@ -1,5 +1,6 @@
 typeset -U path
 path=(
+  $HOME/.cargo/bin
   $GEM_HOME/bin
   $PNPM_HOME
   $JAVA_HOME/bin
