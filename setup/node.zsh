@@ -12,12 +12,9 @@ elif exists nvm; then
   nvm use --lts
 
   # Install global NPM packages
-  npm install --global cross-env
   npm install --global eslint
   npm install --global http-server
   npm install --global json-server
-  npm install --global nodemon
-  npm install --global npkill
   npm install --global prettier
   npm install --global ts-node
   npm install --global typescript
