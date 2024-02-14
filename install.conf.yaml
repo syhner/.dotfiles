@@ -18,7 +18,6 @@
       create: true
       path: config/yabai
     ~/.gitconfig: .gitconfig
-    ~/.mackup.cfg: .mackup.cfg
     ~/.nanorc: .nanorc
     ~/.tmux.conf: .tmux.conf
     ~/.zprofile: .zprofile
