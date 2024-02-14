@@ -1,7 +1,9 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias brewcasks="brew ls --casks | parallel \"echo -n 'cask \"{}\" #'; brew desc --cask --eval-all {} | cut -d ':' -f 2-\""
 alias brewdump='brew bundle dump --describe --file=~/.dotfiles/Brewfile.dump --force'
+alias brewformulae="brew leaves --installed-on-request | parallel \"echo -n 'brew \"{}\" #'; brew desc --formula --eval-all {} | cut -d ':' -f 2-\""
 alias cmd='command'
 alias exitcode='echo $?'
 alias ftrail='<<<${(F)fpath}'
