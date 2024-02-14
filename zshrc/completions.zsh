@@ -16,3 +16,6 @@ complete -o nospace -C "$HOME/bin/terraform" terraform
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
 fi
+
+# bun
+[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
