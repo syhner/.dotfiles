@@ -8,6 +8,7 @@ tap "homebrew/services"
 # Brews (Formulae / Packages)
 brew "awscli"                                       # Official Amazon AWS command-line interface
 brew "bat"                                          # Clone of cat(1) with syntax highlighting and Git integration
+brew "btop"                                         # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "cloudflared"                                  # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "curl"                                         # Get a file from an HTTP, HTTPS or FTP server
 brew "dnsmasq"                                      # Lightweight DNS forwarder and DHCP server
@@ -23,6 +24,7 @@ brew "less"                                         # Pager program similar to m
 brew "mas"                                          # Mac App Store command-line interface
 brew "nano"                                         # Free (GNU) replacement for the Pico text editor
 brew "nvm"                                          # Manage multiple Node.js versions
+brew "ollama"                                       # Create, run, and share large language models (LLMs)
 brew "openssl@3"                                    # Cryptography and SSL/TLS Toolkit
 brew "parallel"                                     # Shell command parallelization utility
 brew "pyenv"                                        # Python version management
