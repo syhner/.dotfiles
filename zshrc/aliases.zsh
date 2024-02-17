@@ -14,6 +14,7 @@ alias pi='ssh raspberrypi.local -l pi'
 alias expose-cf='cloudflared tunnel run local'
 alias expose-ng="ngrok --domain=$NGROK_DOMAIN"               # expose-ng http 3000
 alias expose-ng-edge="ngrok tunnel --label edge=$NGROK_EDGE" # expose-ng-edge 3000
+alias rm='trash'                                             # trash-cli
 alias sudo='sudo '                                           # Allow aliases to be sudoed
 alias tf='terraform'
 alias trail='<<<${(F)path}'
