@@ -30,6 +30,7 @@ brew "parallel"                                     # Shell command parallelizat
 brew "pyenv"                                        # Python version management
 brew "pnpm"                                         # Fast, disk space efficient package manager
 brew "spaceship"                                    # Zsh prompt for Astronauts
+brew "tldr"                                         # Simplified and community-driven man pages
 brew "tree"                                         # Display directories as trees (with optional color/HTML output)
 brew "hashicorp/tap/vault"                          # Vault
 brew "koekeishiya/formulae/skhd"                    # Simple hotkey-daemon for macOS.
