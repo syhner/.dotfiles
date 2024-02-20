@@ -2,3 +2,4 @@
 Brewfile.dump
 Brewfile.lock.json
 private/
+.gitconfig-work
