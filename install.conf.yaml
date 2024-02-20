@@ -28,17 +28,3 @@
 
 - create:
     - ~/work
-
-- shell:
-    - command: ./setup/homebrew.zsh
-      stdout: true
-      stderr: true
-    - command: ./setup/zsh.zsh
-      stdout: true
-      stderr: true
-    - command: ./setup/node.zsh
-      stdout: true
-      stderr: true
-    - command: ./setup/python.zsh
-      stdout: true
-      stderr: true
