@@ -35,3 +35,5 @@
 	path = .gitconfig-work
 [credential]
 	helper = osxkeychain
+	# helper = store (linux)
+	# helper = wincred (windows)
