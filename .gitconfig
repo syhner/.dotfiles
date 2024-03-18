@@ -27,11 +27,10 @@
 	gpgsign = false
 [merge]
 	tool = vscode
-[includeIf "gitdir:~/repos/"]
-	path = .gitconfig-personal
-[includeIf "gitdir:~/.dotfiles/"]
-	path = .gitconfig-personal
-[includeIf "gitdir:~/work/"]
+[user]
+	name = syhner
+	email = 71605633+syhner@users.noreply.github.com
+[includeIf "gitdir:~/repos/work/"]
 	path = .gitconfig-work
 [credential]
 	helper = osxkeychain
