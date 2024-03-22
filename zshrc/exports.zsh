@@ -1,8 +1,9 @@
 export ANDROID_HOME="$HOME/Library/Android/sdk" # https://reactnative.dev/docs/environment-setup
 export BREWFILE="$HOME/.dotfiles/Brewfile"
 export DOTFILES="$HOME/.dotfiles"
+export DYLD_LIBRARY_PATH=/usr/local/lib # C (will not work on Mac https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables)
 export GEM_HOME="$HOME/.gem"
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home # https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/macos-install.html
+export LIBRARY_PATH=/usr/local/lib # C
 export LOAD="$HOME/.dotfiles/zshrc/load"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # Syntax highlighting for man pages using bat
 export NGROK_DOMAIN="174ee0e60828-8717937222566027958.ngrok-free.app"
