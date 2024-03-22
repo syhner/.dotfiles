@@ -15,6 +15,7 @@ brew "dnsmasq"                                      # Lightweight DNS forwarder 
 brew "docker-compose"                               # Isolated development environments using Docker
 brew "exa"                                          # Modern replacement for 'ls'
 brew "ffmpeg"                                       # Play, record, convert, and stream audio and video
+brew "fnm"                                          # Fast and simple Node.js version manager
 brew "fzf"                                          # Command-line fuzzy finder written in Go
 brew "gh"                                           # GitHub command-line tool
 brew "git"                                          # Distributed revision control system
@@ -23,13 +24,11 @@ brew "jq"                                           # Lightweight and flexible c
 brew "less"                                         # Pager program similar to more
 brew "mas"                                          # Mac App Store command-line interface
 brew "nano"                                         # Free (GNU) replacement for the Pico text editor
-brew "nvm"                                          # Manage multiple Node.js versions
 brew "ollama"                                       # Create, run, and share large language models (LLMs)
 brew "openssl@3"                                    # Cryptography and SSL/TLS Toolkit
 brew "parallel"                                     # Shell command parallelization utility
 brew "pyenv"                                        # Python version management
 brew "pnpm"                                         # Fast, disk space efficient package manager
-brew "spaceship"                                    # Zsh prompt for Astronauts
 brew "tldr"                                         # Simplified and community-driven man pages
 brew "tree"                                         # Display directories as trees (with optional color/HTML output)
 brew "hashicorp/tap/vault"                          # Vault
@@ -81,6 +80,7 @@ cask "steam"                                        # Video game digital distrib
 cask "tableplus"                                    # Native GUI tool for relational databases
 cask "teamviewer"                                   # Remote access and connectivity software focused on security
 cask "tor-browser"                                  # Web browser focusing on security
+brew "tpm"                                          # Plugin manager for tmux
 cask "visual-studio-code"                           # Open-source code editor
 cask "vlc"                                          # Multimedia player
 cask "vnc-viewer"                                   # Remote desktop application focusing on security
