@@ -81,6 +81,24 @@ function flag() {
   fi
 }
 
+function cs50() {
+  local run=$(flag --short r --long run --isboolean --default false --args $@)
+
+  if $run; then
+    local filename=$2
+  else
+    local filename=$1
+  fi
+
+  local filenameWithoutExt=${filename%.*}
+  clang -lcs50 $filename -o $filenameWithoutExt
+
+  if $run; then
+    ./"$filenameWithoutExt"
+    rm $filenameWithoutExt
+  fi
+}
+
 function gitcd() {
   cd $(git rev-parse --show-toplevel)/$1
 }
