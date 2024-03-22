@@ -1,11 +1,6 @@
 autoload -U +X bashcompinit && bashcompinit
 # autoload -U +X compinit && compinit
 
-if type brew &>/dev/null; then
-  autoload -Uz compinit
-  compinit
-fi
-
 # terraform
 complete -o nospace -C "$HOME/bin/terraform" terraform
 
