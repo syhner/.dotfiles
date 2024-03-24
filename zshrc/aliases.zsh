@@ -7,6 +7,7 @@ alias brewformulae="brew leaves --installed-on-request | parallel \"echo -n 'bre
 alias cmd='command'
 alias exitcode='echo $?'
 alias ftrail='<<<${(F)fpath}'
+alias gcam='git commit --all --message'
 alias gcma='git commit --all --message'
 alias gcob='git checkout -b'
 alias gcoB='git checkout -B'
