@@ -21,6 +21,7 @@
 	}; \
 	f"
 	unstage = restore --staged
+	undo = reset --soft HEAD~1
 [init]
 	defaultBranch = main
 [commit]
