@@ -9,6 +9,9 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
 
+# Add '/' as a word separator cursor jumps
+WORDCHARS=${WORDCHARS/\//}
+
 # Use arrow keys to navigate between TAB suggestions
 zstyle ':completion:*' menu select
 
