@@ -123,6 +123,11 @@ function mkcd() {
   mkdir -p "$@" && cd "$_"
 }
 
+# reset_permissions /Applications/Visual Studio Code.app
+function reset_permissions() {
+  mdls /Applications/Barrier.app | grep kMDItemCF | awk -F'"' '{print $2}' | xargs tccutil reset All
+}
+
 function resource() {
   source ~/.zshrc
 }
@@ -154,6 +159,7 @@ function setlocaldns() {
 }
 
 # usage: zcode [-r] <project name>
+# TODO: fzf instead with preview
 function zcode() {
   local reuse=$(flag --short r --long reuse --isboolean --default false --args $@)
   # Write a conditional based on whether reuse is true or false
